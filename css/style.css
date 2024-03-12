@@ -1,0 +1,116 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+/* header */
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    background-color: #f8146c;
+    height: 5vh;
+}
+
+/* header nav {} */
+
+.logo {
+    margin: 0.4rem;
+    width: 3rem;
+}
+
+/* main */
+
+/* premiere section */
+
+main {
+    background-color: #e3e3e3;
+}
+
+.Team {
+    margin: 1rem 2rem;
+    background-color: white;
+    height: 45vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* seconde section */
+
+.presentation {
+    background-color: white;
+    margin: 3rem;
+    height: 45vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* .presentation h2 {} */
+
+.presentation div {
+    width: 65ch;
+    margin: 2rem;
+}
+
+/* footer */
+
+.icoFaceBook {
+    width: 2rem;
+}
+
+.icoGitHub {
+    width: 2rem;
+}
+
+.icoInstagram {
+    width: 2rem;
+}
+
+.icoLinkedIn {
+    width: 2rem;
+}
+
+.icoTwitter {
+    width: 2rem;
+}
+
+footer {
+    height: 10vh;
+    background-color: #f8146c;
+}
+
+/* .socialNetwork {} */
+
+.socialNetwork ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+
+}
+
+.socialNetwork ul li {
+    list-style: none;
+}
+
+.menuFooter ul {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.menuFooter ul li {
+    list-style: none;
+
+}
+
+.menuFooter ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.footerWCS {
+    color: white;
+}
