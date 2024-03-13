@@ -26,12 +26,13 @@ header {
 
 main {
     background-color: #e3e3e3;
+    padding: 1rem 0;
 }
 
-.Team {
-    margin: 1rem 2rem;
+section {
+    margin: 0 2rem;
     background-color: white;
-    height: 45vh;
+    height: 50vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -39,20 +40,20 @@ main {
 
 /* seconde section */
 
-.presentation {
+/* .presentation {
     background-color: white;
-    margin: 3rem;
+    margin: 2rem 2rem 0 2rem;
     height: 45vh;
     display: flex;
     flex-direction: column;
     align-items: center;
-}
+} */
 
 /* .presentation h2 {} */
 
 .presentation div {
-    width: 65ch;
-    margin: 2rem;
+    width: 50ch;
+    padding: 0 2rem;
 }
 
 /* footer */
@@ -78,16 +79,29 @@ main {
 }
 
 footer {
+    background-image: url("../images/footer.png");
+    background-size: cover;
     height: 10vh;
-    background-color: #f8146c;
+    /* background-color: #f8146c; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
+
+/* footer 1 */
+
+
+
 /* .socialNetwork {} */
+
+.socialNetwork {}
 
 .socialNetwork ul {
     display: flex;
     flex-direction: row;
     justify-content: start;
+    padding-left: 0.5rem;
 
 }
 
@@ -98,11 +112,14 @@ footer {
 .menuFooter ul {
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    padding-left: 0;
 
 }
 
 .menuFooter ul li {
     list-style: none;
+    padding-left: 2rem;
 
 }
 
@@ -112,5 +129,6 @@ footer {
 }
 
 .footerWCS {
+    text-align: center;
     color: white;
 }
