@@ -24,7 +24,8 @@ body {
 header {
     display: flex;
     flex-direction: row;
-    justify-content: end;
+    justify-content: start;
+    justify-content: space-between;
     background-color: #f8146c;
     height: 5vh;
 }
@@ -308,3 +309,84 @@ footer {
     padding-top: 0.5rem;
 
 }
+
+
+/* Ici commence le menu buger /* 
+
+ /* Sidenav menu */
+ .nav_principal {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: -3000px;
+    background-color: rgba(110, 3, 101, 0.425);
+    padding-top: 60px;
+    transition: left 0.5s ease;
+    display: flex;
+    justify-content: center;
+    
+    align-items: center;
+  }
+  
+  .nav_principal ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .nav_principal a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+    display: block;
+    transition: 0.15s;
+    color: white;
+  }
+  
+  .nav_principal a:hover {
+    color: #871B94;
+  }
+  
+  .nav_principal.active {
+    left: 0;
+  }
+  
+  
+  .nav_principal .close {
+    position: absolute;
+    top: 0;
+   left: -5px;
+    font-size: 36px;
+    color: #ffffff00;
+  }
+  
+  .burger-icon span {
+    display: block;
+    justify-content: flex-start;
+    width: 35px;
+    height: 5px;
+    margin: 6px 0;
+  }
+
+  .buttonOpen {
+    display: block;
+    justify-content: flex-start;
+    width: 70x;
+    height: 40px;
+    margin: 6px 0;
+    margin-top: 3px;
+  }
+
+  .buttonClose {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 70x;
+    height: 40px;
+  }
+
+
+
