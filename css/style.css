@@ -1,6 +1,22 @@
+@font-face {
+    font-family: "FilsonProBlack";
+    src: url("../fonts/FilsonProBlack.otf") format("otf");
+
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
+
+}
+
+h1 h2 p li {
+    font-family: "FilsonProBlack", sans-serif;
+}
+
+body {
+    background-color: #e3e3e3;
+    font-family: "FilsonProBlack", sans-serif;
 }
 
 /* header */
@@ -22,15 +38,26 @@ header {
 
 /* main */
 
-/* premiere section */
-
 main {
     background-color: #e3e3e3;
-    padding: 1rem 0;
+    margin: 1rem;
 }
 
-section {
-    margin: 0 2rem;
+/* section {
+} */
+
+/* premiere section */
+
+
+
+section h1 {
+    font-size: 40px;
+    text-align: center;
+    padding: 0.5rem;
+}
+
+.tableau {
+    margin: 0 1rem;
     background-color: white;
     height: 50vh;
     display: flex;
@@ -38,71 +65,220 @@ section {
     align-items: center;
 }
 
-/* seconde section */
+.Yavuz {
+    width: 6rem;
+    height: 6rem;
+    z-index: 1;
 
-/* .presentation {
+    background-image: url(../avatar/yavuzkutuk.png);
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    border: solid 1px grey;
+}
+
+.Vincent {
+    width: 5.5rem;
+    height: 5.5rem;
+    z-index: 1;
+    position: absolute;
+    left: 13rem;
+    top: 42.5rem;
+    background-image: url(../avatar/Vincent.htm);
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    border: solid 1px grey;
+}
+
+.Alex {
+    position: absolute;
+    width: 5rem;
+    height: 5rem;
+    z-index: 1;
+    left: 45rem;
+    top: 28rem;
+    background-image: url(./avatar/Alex.htm);
+    background-size: cover;
+    border-radius: 50%;
+    border: solid 1px grey;
+}
+
+.Ali {
+    position: absolute;
+    width: 5rem;
+    height: 5rem;
+    z-index: 1;
+    left: 56rem;
+    top: 32rem;
+    background-image: url(./avatar/Ali.htm);
+    background-size: cover;
+    border-radius: 50%;
+    border: solid 1px grey;
+}
+
+.Anae {
+    position: absolute;
+    width: 5rem;
+    height: 5rem;
+    z-index: 1;
+    left: 61rem;
+    top: 42rem;
+    background-image: url(./avatar/Anae.htm);
+    background-size: cover;
+    border-radius: 50%;
+    border: solid 1px grey;
+}
+
+.David {
+    position: absolute;
+    width: 5rem;
+    height: 5rem;
+    z-index: 1;
+    left: 60rem;
+    top: 53rem;
+    background-image: url(./avatar/David.png);
+    background-size: cover;
+    border-radius: 50%;
+    border: solid 1px grey;
+}
+
+.Gabriel {
+    position: absolute;
+    width: 5rem;
+    height: 5rem;
+    z-index: 1;
+    left: 51.5rem;
+    top: 61rem;
+    background-image: url(./avatar/Gabriel.htm);
+    background-size: cover;
+    border-radius: 50%;
+    border: solid 1px grey;
+}
+
+.Julien {
+    position: absolute;
+    width: 5rem;
+    height: 5rem;
+    z-index: 1;
+    left: 39rem;
+    top: 61rem;
+    background-image: url(./avatar/Julien.htm);
+    background-size: cover;
+    border-radius: 50%;
+    border: solid 1px grey;
+}
+
+.Matth {
+    position: absolute;
+    width: 5rem;
+    height: 5rem;
+    z-index: 1;
+    left: 30rem;
+    top: 53rem;
+    background-image: url(./avatar/Matth.htm);
+    background-size: cover;
+    border-radius: 50%;
+    border: solid 1px grey;
+}
+
+.Niko {
+    position: absolute;
+    width: 5rem;
+    height: 5rem;
+    z-index: 1;
+    left: 29rem;
+    top: 42rem;
+    background-image: url(./avatar/Niko.jpg);
+    background-size: cover;
+    border-radius: 50%;
+    border: solid 1px grey;
+}
+
+.Phil {
+    position: absolute;
+    width: 5rem;
+    height: 5rem;
+    z-index: 1;
+    left: 34rem;
+    top: 32rem;
+    background-image: url(./avatar/Phil.jpg);
+    background-size: cover;
+    border-radius: 50%;
+    border: solid 1px grey;
+}
+
+
+/* seconde section */
+section h2 {
+    text-align: center;
+    font-size: medium;
+}
+
+.presentation {
     background-color: white;
-    margin: 2rem 2rem 0 2rem;
+    margin: 0 1rem 4rem;
     height: 45vh;
     display: flex;
     flex-direction: column;
     align-items: center;
-} */
+    border-radius: 15px;
+}
 
-/* .presentation h2 {} */
 
-.presentation div {
-    width: 50ch;
-    padding: 0 2rem;
+.presentation p {
+
+    display: flex;
+    margin: 0 1.5rem;
+    padding: 1rem;
 }
 
 /* footer */
 
 .icoFaceBook {
-    width: 2rem;
+    width: 2.2rem;
 }
 
 .icoGitHub {
-    width: 2rem;
+    width: 2.2rem;
 }
 
 .icoInstagram {
-    width: 2rem;
+    width: 2.2rem;
 }
 
 .icoLinkedIn {
-    width: 2rem;
+    width: 2.2rem;
 }
 
 .icoTwitter {
-    width: 2rem;
+    width: 2.2rem;
 }
 
 footer {
-    background-image: url("../images/footer.png");
+    background-image: url("../images/footer-copie.png");
     background-size: cover;
-    height: 10vh;
-    /* background-color: #f8146c; */
+    height: 6rem;
+    border-top: solid 1px grey;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+
 }
 
 
 /* footer 1 */
 
-
-
 /* .socialNetwork {} */
 
-.socialNetwork {}
+.socialNetwork {
+    margin-bottom: 0.8rem;
+}
 
 .socialNetwork ul {
     display: flex;
     flex-direction: row;
     justify-content: start;
-    padding-left: 0.5rem;
-
+    padding-left: 0rem;
 }
 
 .socialNetwork ul li {
@@ -114,13 +290,11 @@ footer {
     flex-direction: row;
     justify-content: center;
     padding-left: 0;
-
 }
 
 .menuFooter ul li {
     list-style: none;
     padding-left: 2rem;
-
 }
 
 .menuFooter ul li a {
@@ -131,4 +305,6 @@ footer {
 .footerWCS {
     text-align: center;
     color: white;
+    padding-top: 0.5rem;
+
 }
