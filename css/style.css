@@ -24,7 +24,8 @@ body {
 header {
     display: flex;
     flex-direction: row;
-    justify-content: end;
+    justify-content: start;
+    justify-content: space-between;
     background-color: #f8146c;
     height: 5vh;
 }
@@ -48,7 +49,32 @@ main {
 
 /* premiere section */
 
+.premièreLigne {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
 
+.secondeLigne {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+
+.troisièmLigne {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
+
+.quatrièmeLigne {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
 
 section h1 {
     font-size: 40px;
@@ -58,6 +84,7 @@ section h1 {
 
 .tableau {
     margin: 0 1rem;
+    padding-top: 1rem;
     background-color: white;
     height: 50vh;
     display: flex;
@@ -81,9 +108,9 @@ section h1 {
     width: 5.5rem;
     height: 5.5rem;
     z-index: 1;
-    position: absolute;
-    left: 13rem;
-    top: 42.5rem;
+    /* position: absolute; */
+    /* left: 13rem;
+    top: 42.5rem; */
     background-image: url(../avatar/Vincent.htm);
     background-size: cover;
     background-position: center;
@@ -92,117 +119,117 @@ section h1 {
 }
 
 .Alex {
-    position: absolute;
+    /* position: absolute; */
     width: 5rem;
     height: 5rem;
     z-index: 1;
-    left: 45rem;
-    top: 28rem;
-    background-image: url(./avatar/Alex.htm);
+    /* left: 45rem;
+    top: 28rem; */
+    background-image: url(../avatar/Alex.htm);
     background-size: cover;
     border-radius: 50%;
     border: solid 1px grey;
 }
 
 .Ali {
-    position: absolute;
+    /* position: absolute; */
     width: 5rem;
     height: 5rem;
     z-index: 1;
-    left: 56rem;
-    top: 32rem;
-    background-image: url(./avatar/Ali.htm);
+    /* left: 56rem; */
+    /* top: 32rem; */
+    background-image: url(../avatar/Ali.htm);
     background-size: cover;
     border-radius: 50%;
     border: solid 1px grey;
 }
 
 .Anae {
-    position: absolute;
+    /* position: absolute; */
     width: 5rem;
     height: 5rem;
     z-index: 1;
-    left: 61rem;
-    top: 42rem;
-    background-image: url(./avatar/Anae.htm);
+    /* left: 61rem; */
+    /* top: 42rem; */
+    background-image: url(../avatar/Anae.htm);
     background-size: cover;
     border-radius: 50%;
     border: solid 1px grey;
 }
 
 .David {
-    position: absolute;
+    /* position: absolute; */
     width: 5rem;
     height: 5rem;
     z-index: 1;
-    left: 60rem;
-    top: 53rem;
-    background-image: url(./avatar/David.png);
+    /* left: 60rem; */
+    /* top: 53rem; */
+    background-image: url(../avatar/David.png);
     background-size: cover;
     border-radius: 50%;
     border: solid 1px grey;
 }
 
 .Gabriel {
-    position: absolute;
+    /* position: absolute; */
     width: 5rem;
     height: 5rem;
     z-index: 1;
-    left: 51.5rem;
-    top: 61rem;
-    background-image: url(./avatar/Gabriel.htm);
+    /* left: 51.5rem; */
+    /* top: 61rem; */
+    background-image: url(../avatar/Gabriel.htm);
     background-size: cover;
     border-radius: 50%;
     border: solid 1px grey;
 }
 
 .Julien {
-    position: absolute;
+    /* position: absolute; */
     width: 5rem;
     height: 5rem;
     z-index: 1;
-    left: 39rem;
-    top: 61rem;
-    background-image: url(./avatar/Julien.htm);
+    /* left: 39rem; */
+    /* top: 61rem; */
+    background-image: url(../avatar/Julien.htm);
     background-size: cover;
     border-radius: 50%;
     border: solid 1px grey;
 }
 
 .Matth {
-    position: absolute;
+    /* position: absolute; */
     width: 5rem;
     height: 5rem;
     z-index: 1;
-    left: 30rem;
-    top: 53rem;
-    background-image: url(./avatar/Matth.htm);
+    /* left: 30rem; */
+    /* top: 53rem; */
+    background-image: url(../avatar/Matth.htm);
     background-size: cover;
     border-radius: 50%;
     border: solid 1px grey;
 }
 
 .Niko {
-    position: absolute;
+    /* position: absolute; */
     width: 5rem;
     height: 5rem;
     z-index: 1;
-    left: 29rem;
-    top: 42rem;
-    background-image: url(./avatar/Niko.jpg);
+    /* left: 29rem; */
+    /* top: 42rem; */
+    background-image: url(../avatar/Niko.jpg);
     background-size: cover;
     border-radius: 50%;
     border: solid 1px grey;
 }
 
 .Phil {
-    position: absolute;
+    /* position: absolute; */
     width: 5rem;
     height: 5rem;
     z-index: 1;
-    left: 34rem;
-    top: 32rem;
-    background-image: url(./avatar/Phil.jpg);
+    /* left: 34rem; */
+    /* top: 32rem; */
+    background-image: url(../avatar/Phil.jpg);
     background-size: cover;
     border-radius: 50%;
     border: solid 1px grey;
@@ -256,8 +283,10 @@ section h2 {
 }
 
 footer {
-    background-image: url("../images/footer-copie.png");
-    background-size: cover;
+    background-color: #f8146c;
+    /* background-image: url("../images/footer-copie.png");
+    background-size: cover; */
+    max-width: 768px;
     height: 6rem;
     border-top: solid 1px grey;
     display: flex;
@@ -307,4 +336,82 @@ footer {
     color: white;
     padding-top: 0.5rem;
 
+}
+
+
+/* Ici commence le menu buger /* 
+
+ /* Sidenav menu */
+.nav_principal {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: -3000px;
+    background-color: rgba(110, 3, 101, 0.425);
+    padding-top: 60px;
+    transition: left 0.5s ease;
+    display: flex;
+    justify-content: center;
+
+    align-items: center;
+}
+
+.nav_principal ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav_principal a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+    display: block;
+    transition: 0.15s;
+    color: white;
+}
+
+.nav_principal a:hover {
+    color: #871B94;
+}
+
+.nav_principal.active {
+    left: 0;
+}
+
+
+.nav_principal .close {
+    position: absolute;
+    top: 0;
+    left: -5px;
+    font-size: 36px;
+    color: #ffffff00;
+}
+
+.burger-icon span {
+    display: block;
+    justify-content: flex-start;
+    width: 35px;
+    height: 5px;
+    margin: 6px 0;
+}
+
+.buttonOpen {
+    display: block;
+    justify-content: flex-start;
+    width: 70x;
+    height: 40px;
+    margin: 6px 0;
+    margin-top: 3px;
+}
+
+.buttonClose {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 70x;
+    height: 40px;
 }
