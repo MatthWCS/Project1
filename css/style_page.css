@@ -1,0 +1,160 @@
+/* CSS Document */
+
+
+
+body {
+	background-color: #d3d3d3;
+	margin: 0;
+}
+
+section {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100rem;
+	height: 100rem;
+}
+
+
+.logo_center {
+	background-color: #f7146b;
+	width: 15rem;
+	height: 15rem;
+	z-index: 1;
+	position: absolute;
+	left: 42.5rem;
+	top: 42.5rem;
+	background-image: url(./logos/logo.svg);
+	background-size: cover;
+	background-position: center;
+	border-radius: 50%;
+	border: solid 1px grey;
+
+}
+
+.Alex {
+	position: absolute;
+	width: 10rem;
+	height: 10rem;
+	z-index: 2;
+	left: 45rem;
+	top: 28rem;
+	background-image: url(./avatar/Alex.htm);
+	background-size: cover;
+	border-radius: 50%;
+	border: solid 1px grey;
+}
+
+.Ali {
+	position: absolute;
+	width: 10rem;
+	height: 10rem;
+	z-index: 3;
+	left: 56rem;
+	top: 32rem;
+	background-image: url(./avatar/Ali.htm);
+	background-size: cover;
+	border-radius: 50%;
+	border: solid 1px grey;
+}
+
+.Anae {
+	position: absolute;
+	width: 10rem;
+	height: 10rem;
+	z-index: 2;
+	left: 61rem;
+	top: 42rem;
+	background-image: url(./avatar/Anae.htm);
+	background-size: cover;
+	border-radius: 50%;
+	border: solid 1px grey;
+}
+
+.David {
+	position: absolute;
+	width: 10rem;
+	height: 10rem;
+	z-index: 4;
+	left: 60rem;
+	top: 53rem;
+	background-image: url(./avatar/David.png);
+	background-size: cover;
+	border-radius: 50%;
+	border: solid 1px grey;
+}
+
+.Gabriel {
+	position: absolute;
+	width: 10rem;
+	height: 10rem;
+	z-index: 2;
+	left: 51.5rem;
+	top: 61rem;
+	background-image: url(./avatar/Gabriel.htm);
+	background-size: cover;
+	border-radius: 50%;
+	border: solid 1px grey;
+}
+
+.Julien {
+	position: absolute;
+	width: 10rem;
+	height: 10rem;
+	z-index: 2;
+	left: 39rem;
+	top: 61rem;
+	background-image: url(./avatar/Julien.htm);
+	background-size: cover;
+	border-radius: 50%;
+	border: solid 1px grey;
+}
+
+.Matth {
+	position: absolute;
+	width: 10rem;
+	height: 10rem;
+	z-index: 2;
+	left: 30rem;
+	top: 53rem;
+	background-image: url(./avatar/Matth.htm);
+	background-size: cover;
+	border-radius: 50%;
+	border: solid 1px grey;
+}
+
+.Niko {
+	position: absolute;
+	width: 10rem;
+	height: 10rem;
+	z-index: 2;
+	left: 29rem;
+	top: 42rem;
+	background-image: url(./avatar/Niko.jpg);
+	background-size: cover;
+	border-radius: 50%;
+	border: solid 1px grey;
+}
+
+.Phil {
+	position: absolute;
+	width: 10rem;
+	height: 10rem;
+	z-index: 2;
+	left: 34rem;
+	top: 32rem;
+	background-image: url(./avatar/Phil.jpg);
+	background-size: cover;
+	border-radius: 50%;
+	border: solid 1px grey;
+}
+
+/* .avatar11 {
+	position: absolute;
+	width: 15rem;
+	height: 15rem;
+	z-index: 2;
+	left: 976px;
+	top: 213px;
+	background-image: url(Projet%20Wilder%27s%20Trombi/PNG/avatar.png);
+} */
