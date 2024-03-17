@@ -1,6 +1,6 @@
 @font-face {
     font-family: "FilsonProBlack";
-    src: url("../fonts/FilsonProBlack.otf") format("otf");
+    src: url("../fonts/FilsonProBlack.otf");
 
 }
 
@@ -11,7 +11,8 @@
 }
 
 h1 h2 p li {
-    font-family: url(../fonts/FilsonProBlack.otf);
+    color: whitesmoke;
+    font-family: "FilsonProBlack", sans-serif;
 }
 
 body {
@@ -28,9 +29,6 @@ header {
     flex-direction: row;
     justify-content: start;
     justify-content: space-between;
-    /* background-color: #f8146cea; */
-    /* background-image: url(../images/formation_image_01.webp);
-    background-size: cover; */
     background: linear-gradient(178deg, #f7146b 40%, #ffffffbb 70%);
     height: 5vh;
     border-radius: 0 0 10px 10px;
@@ -47,95 +45,105 @@ header {
 /* main */
 
 main {
-    /* background-image: url(../images/Travail-dequipe-Mag-min.jpg.webp);
-    background-size: cover; */
-    /* background-color: #e3e3e3; */
     padding: 1rem;
 }
 
-/* section {
-} */
-
 /* premiere section */
-
-.premièreLigne {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
-.secondeLigne {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
-
-
-.troisièmLigne {
-
-    display: flex;
-    flex-direction: row;
-    justify-content: end;
-}
-
-.quatrièmeLigne {
-    display: flex;
-    flex-direction: row;
-    justify-content: end;
-}
 
 section h1 {
     color: whitesmoke;
-    font-size: 40px;
+    font-size: 38px;
     text-align: center;
     padding: 1rem 0 2rem 0;
 }
 
 .tableau {
-    margin: 0 1rem;
+    margin-left: auto;
+    margin-right: auto;
     padding-top: 1rem;
-    background-color: rgba(255, 255, 255, 0.644);
-    height: 50vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    padding-bottom: 1rem;
+    background-color: #ffffffa4;
+    height: auto;
+    width: 100%;
     border-radius: 10px;
+}
+
+.tableau tr td p {
+    font-size: 18px;
+}
+
+.T {
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .Yavuz {
     width: 6rem;
     height: 6rem;
     z-index: 1;
-
+    margin-left: auto;
+    margin-right: auto;
     background-image: url(../avatar/yavuzkutuk.png);
     background-size: cover;
-    background-position: center;
     border-radius: 50%;
     border: solid 1px grey;
 }
 
+.tableau p {
+    color: #363636;
+    text-align: center;
+}
+
+
+.ligneSeparative {
+    width: 100%;
+    margin: 0;
+}
+
+.div10 {
+    padding: 0;
+    width: 12.5%;
+}
+
+.div20 {
+    border-bottom: #363636 solid 3px;
+    padding: 0;
+    width: 75%;
+}
+
+.div30 {
+    padding: 0;
+    width: 12.5%;
+}
+
+.ligne1 {
+    width: 100%;
+}
+
+.ligne1 td {
+    width: 25%;
+    text-align: center;
+}
+
+
 .Vincent {
+    margin-left: auto;
+    margin-right: auto;
     width: 5.5rem;
     height: 5.5rem;
     z-index: 1;
-    /* position: absolute; */
-    /* left: 13rem;
-    top: 42.5rem; */
     background-image: url(../avatar/Vincent.htm);
     background-size: cover;
-    background-position: center;
     border-radius: 50%;
     border: solid 1px grey;
 }
 
 .Alex {
-    /* position: absolute; */
+    margin-left: auto;
+    margin-right: auto;
     width: 5rem;
     height: 5rem;
     z-index: 1;
-    /* left: 45rem;
-    top: 28rem; */
     background-image: url(../avatar/Alex.htm);
     background-size: cover;
     border-radius: 50%;
@@ -143,12 +151,11 @@ section h1 {
 }
 
 .Ali {
-    /* position: absolute; */
+    margin-left: auto;
+    margin-right: auto;
     width: 5rem;
     height: 5rem;
     z-index: 1;
-    /* left: 56rem; */
-    /* top: 32rem; */
     background-image: url(../avatar/Ali.htm);
     background-size: cover;
     border-radius: 50%;
@@ -156,12 +163,11 @@ section h1 {
 }
 
 .Anae {
-    /* position: absolute; */
+    margin-left: auto;
+    margin-right: auto;
     width: 5rem;
     height: 5rem;
     z-index: 1;
-    /* left: 61rem; */
-    /* top: 42rem; */
     background-image: url(../avatar/Anae.htm);
     background-size: cover;
     border-radius: 50%;
@@ -169,12 +175,11 @@ section h1 {
 }
 
 .David {
-    /* position: absolute; */
+    margin-left: auto;
+    margin-right: auto;
     width: 5rem;
     height: 5rem;
     z-index: 1;
-    /* left: 60rem; */
-    /* top: 53rem; */
     background-image: url(../avatar/David.png);
     background-size: cover;
     border-radius: 50%;
@@ -182,12 +187,11 @@ section h1 {
 }
 
 .Gabriel {
-    /* position: absolute; */
+    margin-left: auto;
+    margin-right: auto;
     width: 5rem;
     height: 5rem;
     z-index: 1;
-    /* left: 51.5rem; */
-    /* top: 61rem; */
     background-image: url(../avatar/Gabriel.htm);
     background-size: cover;
     border-radius: 50%;
@@ -195,12 +199,11 @@ section h1 {
 }
 
 .Julien {
-    /* position: absolute; */
+    margin-left: auto;
+    margin-right: auto;
     width: 5rem;
     height: 5rem;
     z-index: 1;
-    /* left: 39rem; */
-    /* top: 61rem; */
     background-image: url(../avatar/Julien.htm);
     background-size: cover;
     border-radius: 50%;
@@ -208,12 +211,11 @@ section h1 {
 }
 
 .Matth {
-    /* position: absolute; */
+    margin-left: auto;
+    margin-right: auto;
     width: 5rem;
     height: 5rem;
     z-index: 1;
-    /* left: 30rem; */
-    /* top: 53rem; */
     background-image: url(../avatar/Matth.htm);
     background-size: cover;
     border-radius: 50%;
@@ -221,12 +223,11 @@ section h1 {
 }
 
 .Niko {
-    /* position: absolute; */
+    margin-left: auto;
+    margin-right: auto;
     width: 5rem;
     height: 5rem;
     z-index: 1;
-    /* left: 29rem; */
-    /* top: 42rem; */
     background-image: url(../avatar/Niko.jpg);
     background-size: cover;
     border-radius: 50%;
@@ -234,12 +235,11 @@ section h1 {
 }
 
 .Phil {
-    /* position: absolute; */
+    margin-left: auto;
+    margin-right: auto;
     width: 5rem;
     height: 5rem;
     z-index: 1;
-    /* left: 34rem; */
-    /* top: 32rem; */
     background-image: url(../avatar/Phil.jpg);
     background-size: cover;
     border-radius: 50%;
@@ -248,6 +248,7 @@ section h1 {
 
 
 /* seconde section */
+
 section h2 {
     text-align: center;
     font-size: 36px;
@@ -257,20 +258,22 @@ section h2 {
 
 .presentation {
     background-color: #ffffffa4;
-    margin: 0 1rem 4rem;
-    height: 45vh;
+    margin: 0 auto 4rem auto;
+    height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     border-radius: 10px;
+    width: 100%;
 }
 
 
 .presentation p {
-
+    color: #363636;
     display: flex;
     margin: 0 1.5rem;
     padding: 1rem;
+    width: auto;
 }
 
 /* footer */
@@ -296,25 +299,15 @@ section h2 {
 }
 
 footer {
-    /* background-color: #f8146c; */
-    height: 6rem;
-    /* border-top: solid 1px grey; */
+    line-height: 1.5;
+    height: auto;
     display: flex;
     flex-direction: column;
     background: linear-gradient(-2deg, #f7146b 40%, #ffffffbb 70%);
     border-radius: 10px 10px 0 0;
-    /* background-image: url(../images/footer-1.png);
-    background-size: cover; */
 }
-
 
 /* footer 1 */
-
-/* .socialNetwork {} */
-
-.socialNetwork {
-    margin-bottom: 0.8rem;
-}
 
 .socialNetwork ul {
     display: flex;
@@ -328,15 +321,20 @@ footer {
 }
 
 .menuFooter ul {
+    padding-left: 0;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    padding-left: 0;
+    margin-left: auto;
+    margin-right: auto;
+
 }
 
 .menuFooter ul li {
+    height: 18px;
     list-style: none;
-    padding-left: 2rem;
+    padding-left: 1rem;
+    /* padding-right: 1rem; */
 }
 
 .menuFooter ul li a {
@@ -346,6 +344,7 @@ footer {
 .footerWCS {
     text-align: center;
     color: white;
+    padding-bottom: 1rem;
 }
 
 /* Ici commence le menu buger /* 
