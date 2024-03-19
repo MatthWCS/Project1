@@ -1,0 +1,229 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    background-color: #f8146c;
+    height: 5vh;
+}
+
+main {
+    background-color: #e3e3e3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    color: #f8146c;
+    display: flex;
+    justify-content: center;
+}
+
+p {
+    color: #f8146c;
+    display: flex;
+    justify-content: center;
+}
+
+section {
+    width: 100rem;
+    height: 100rem;
+}
+
+
+.logo_center {
+    background-color: #f7146b;
+    width: 15rem;
+    height: 15rem;
+    z-index: 1;
+    position: absolute;
+    left: 42.5rem;
+    top: 42.5rem;
+    background-image: url(./logos/logo.svg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    border: solid 1px grey;
+
+}
+
+.Alex {
+    position: absolute;
+    width: 10rem;
+    height: 10rem;
+    z-index: 2;
+    left: 45rem;
+    top: 28rem;
+    background-image: url(alexandre.png);
+    background-size: cover;
+    border-radius: 50%;
+    border: solid 1px grey;
+}
+
+.Ali {
+    position: absolute;
+    width: 10rem;
+    height: 10rem;
+    z-index: 3;
+    left: 56rem;
+    top: 32rem;
+    background-image: url(ali.png);
+    background-size: cover;
+    border-radius: 50%;
+    border: solid 1px grey;
+}
+
+.Anae {
+    position: absolute;
+    width: 10rem;
+    height: 10rem;
+    z-index: 2;
+    left: 61rem;
+    top: 42rem;
+    background-image: url(anae.png);
+    background-size: cover;
+    border-radius: 50%;
+    border: solid 1px grey;
+}
+
+.David {
+    position: absolute;
+    width: 10rem;
+    height: 10rem;
+    z-index: 4;
+    left: 60rem;
+    top: 53rem;
+    background-image: url(david.png);
+    background-size: cover;
+    border-radius: 50%;
+    border: solid 1px grey;
+}
+
+.Gabriel {
+    position: absolute;
+    width: 10rem;
+    height: 10rem;
+    z-index: 2;
+    left: 51.5rem;
+    top: 61rem;
+    background-image: url(gabriel.png);
+    background-size: cover;
+    border-radius: 50%;
+    border: solid 1px grey;
+}
+
+.Julien {
+    position: absolute;
+    width: 10rem;
+    height: 10rem;
+    z-index: 2;
+    left: 39rem;
+    top: 61rem;
+    background-image: url(julien.png);
+    background-size: cover;
+    border-radius: 50%;
+    border: solid 1px grey;
+}
+
+.Matth {
+    position: absolute;
+    width: 10rem;
+    height: 10rem;
+    z-index: 2;
+    left: 30rem;
+    top: 53rem;
+    background-image: url(matt.png);
+    background-size: cover;
+    border-radius: 50%;
+    border: solid 1px grey;
+}
+
+.Niko {
+    position: absolute;
+    width: 10rem;
+    height: 10rem;
+    z-index: 2;
+    left: 29rem;
+    top: 42rem;
+    background-image: url(niko.png);
+    background-size: cover;
+    border-radius: 50%;
+    border: solid 1px grey;
+}
+
+.Phil {
+    position: absolute;
+    width: 10rem;
+    height: 10rem;
+    z-index: 2;
+    left: 34rem;
+    top: 32rem;
+    background-size: cover;
+    background-image: url(phil.png);
+    border-radius: 50%;
+    border: solid 1px grey;
+}
+
+/* footer */
+.icoFaceBook {
+    width: 2rem;
+}
+
+.icoGitHub {
+    width: 2rem;
+}
+
+.icoInstagram {
+    width: 2rem;
+}
+
+.icoLinkedIn {
+    width: 2rem;
+}
+
+.icoTwitter {
+    width: 2rem;
+}
+
+footer {
+    height: 10vh;
+    background-color: #f8146c;
+}
+
+/* .socialNetwork {} */
+
+.socialNetwork ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+
+}
+
+.socialNetwork ul li {
+    list-style: none;
+}
+
+.menuFooter ul {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.menuFooter ul li {
+    list-style: none;
+
+}
+
+.menuFooter ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.footerWCS {
+    color: white;
+}
