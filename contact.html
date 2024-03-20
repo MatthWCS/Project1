@@ -5,48 +5,97 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/contact.css">
-    <title>Rejoignez-nous !</title>
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+    <!-- Ajouter les meta-->
+    <title>Contact</title>
 </head>
 
 <body>
     <header>
+    
+
+        <div class="navbar">
+
+            <ul class="links">
+                <li><a href="./index.html">Accueil</a></li>
+                <li><a href="./wilder.html">Wilder's</a></li>
+                <li><a href="./team.html">Team</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+            <div class="burger"> <a href="#" id="openButton"><img src="images/menu-open.png" class="buttonOpen">
+                    <span class="menu-icon">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </span>
+                </a></div>
+        </div>
+
         <nav>
 
+
+
+            <div id="nav_principal" class="nav_principal">
+                <a id="closeButton" href="#" class="close"><img src="images/menu-open.png" class="buttonClose"></a>
+                <ul>
+                    <img class="logo" src="./Logos/logo.svg">
+                    <li><a href="./index.html">Accueil</a></li>
+                    <li><a href="./wilder.html">Wilder' S</a></li>
+                    <li><a href="./team.html">Team</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+
+
         </nav>
+        <a href="#"><img class="tel" src="./images/icon-tel.png"><span>
+                <div class="card"></div>
+
+            </span></a>
         <img class="logo" src="./Logos/logo.svg">
     </header>
     <main>
-        <section class="Team">
-            <h2>Team</h2>
-            <div class="tableau">
-                <p>Un tableau ici !!</p>
-            </div>
-        </section>
-        <section class="presentation">
-            <h2>Titre</h2>
-            <div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium dolor harum vero doloribus illo
-                    aliquid, neque nulla eaque assumenda fuga voluptatem eligendi veritatis quis architecto nobis ullam
-                    rem
-                    facilis sit.
-                    Distinctio quasi deserunt, corporis ipsum consequatur odit dolorem dolorum fuga, placeat, alias
-                    laboriosam iusto quos? Sequi laboriosam, ducimus consequuntur necessitatibus nemo nihil, culpa
-                    fugiat,
-                    consequatur nulla inventore sint nesciunt voluptas.
-                    Harum maxime culpa repudiandae nesciunt, tempore quis quas sint ducimus atque rem praesentium
-                    obcaecati
-                    eveniet maiores corporis! Iusto, accusantium? Expedita laudantium recusandae reprehenderit ex iusto
-                    veritatis necessitatibus at. Consectetur, quas.
-                    Exercitationem, esse neque amet sequi eius ad nihil, blanditiis deleniti ullam at et molestias
-                    veritatis
-                    architecto eaque ea, placeat explicabo consequuntur! Exercitationem quis labore nulla consequatur
-                    laudantium animi vel ut?
-                    Repellat nemo tenetur nulla, alias tempora ex delectus amet ratione quam eligendi aspernatur illo
-                    excepturi eius dignissimos omnis eum impedit ea! Voluptate magni, mollitia in dolorum facilis iure
-                    consequatur recusandae?</p>
+        <h1>Rejoignez-nous</h1>
+        <section>
+            <div class="container">
+
+                <div class="section_formulaire">
+                    <form action="" method="">
+                        <form><label for="prenom" required>Prénom</label>
+                            <input type="text" id="prenom">
+                        </form>
+
+                        <form><label>E-mail</label>
+                            <input type="email" required></label>
+                        </form>
+                        <form><label>Inscription à la newlestter <input type="checkbox" value="newlestter"></label>
+                        </form>
+                        </p>
+
+                        <form><label for="questionSelect" required>Que veut dire l'abréviation CCC ?</label>
+                            <select name="question" id="questionmSelect">
+                                <option value="">-- Veuillez choisir une option --</option>
+                                <option value="CCC1">Coctktail - Chivas - Chouffe </option>
+                                <option value="CCC2">Cours - camelCase - Cyber </option>
+                                <option value="CCC3">Café - Clope - Chiote </option>
+                                <option value="CCC4">Chat - chien - chèvre</option>
+                            </select>
+                        </form>
+                        <form><label>Laisse nous un message</label></form>
+                        <form><textarea class="message" id="message1" name="message" rows="5" cols="33" maxlength="500"
+                                wrap="Tapez votre message ici" required>Tapez votre message ici !</textarea>
+                            </label> </form>
+
+                        <form><label for="valide"> <input type="submit" value="Envoyer"></label>
+                </div>
+                </form>
+                <div class="section_campus">Contenu à venir, MAP et Liens</div>
+
             </div>
         </section>
     </main>
+    <footer>
         <div class="socialNetwork">
             <ul>
                 <li><a href="#"><img class="icoFaceBook" src="./Logos/FaceBook.png" alt="FaceBook"></a></li>
@@ -58,16 +107,18 @@
         </div>
         <div class="menuFooter">
             <ul>
-                <li><a href="#">Accueil</a></li>
-                <li><a href="#">Wilders</a></li>
-                <li><a href="#">Team</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="./index.html">Accueil</a></li>
+                <li><a href="./wilder.html">Wilders</a></li>
+                <li><a href="./team.html">Team</a></li>
+                <li><a href="./contact.html">Rejoignez-nous</a></li>
             </ul>
         </div>
-        <div>
-            <p class="footerWCS">&copy;2024 Wild Code School</p>
+        <div class="footerWCS">
+            <p>&copy;2024 Wild Code School</p>
         </div>
+
     </footer>
 </body>
+<script src="./js/script.js"></script>
 
 </html>
