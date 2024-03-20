@@ -1,13 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Ysabeau+SC:wght@1..1000&display=swap');
 
-/* @font-face {
-    font-family: "FilsonProBlack";
-    src: url("../fonts/FilsonProBlack.otf");
-} */
-
 * {
     box-sizing: border-box;
-
     padding: 0;
 }
 
@@ -58,6 +52,12 @@ header {
 }
 
 .logo {
+    color: whitesmoke;
+    margin: 0.4rem;
+    width: 3rem;
+}
+
+.tel {
     color: whitesmoke;
     margin: 0.4rem;
     width: 3rem;
@@ -325,7 +325,7 @@ footer {
     border-radius: 10px 10px 0 0;
 }
 
-/* footer 1 */
+
 
 .socialNetwork ul {
     margin: 0;
@@ -372,11 +372,12 @@ footer {
     z-index: 1;
     top: 0;
     left: -3000px;
-    background-color: rgba(110, 3, 101, 0.425);
+    background-color: rgba(110, 3, 101, 0.664);
     padding-top: 60px;
     transition: left 0.5s ease;
     display: flex;
     justify-content: center;
+
     align-items: center;
 }
 
@@ -400,14 +401,17 @@ footer {
     color: #871B94;
 }
 
+
 .nav_principal.active {
     left: 0;
 }
 
+
 .nav_principal .close {
     position: absolute;
     top: 0;
-    left: -5px;
+    left: -31px;
+    top: -5px;
     font-size: 36px;
     color: #ffffff00;
 }
@@ -422,7 +426,7 @@ footer {
 
 .buttonOpen {
     display: block;
-    justify-content: flex-start;
+    justify-content: flex-end;
     width: 70x;
     height: 40px;
     margin: 6px 0;
@@ -435,4 +439,90 @@ footer {
     align-items: flex-start;
     width: 70x;
     height: 40px;
+}
+
+/*Navbar version bureau*/
+
+.navbar {
+    width: 100%;
+    max-width: 1200px;
+    height: 60px;
+    background-color: #1d15181e;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    color: #1d1518;
+}
+
+
+.navbar li {
+    list-style: none;
+}
+
+.navbar ul {
+
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    margin-left: 45px;
+}
+
+.navbar li a {
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    font-size: 1.3rem;
+}
+
+.navbar .links {
+    display: flex;
+    justify-content: space-between;
+    gap: 4rem;
+}
+
+/* bouton tel */
+
+a span {
+    display: none;
+}
+
+a:hover span {
+    position: absolute;
+    display: block;
+    height: 400px;
+    width: 400px;
+    /* background-image: url("../images/tel.png"); */
+}
+
+a:hover .card {
+    background-image: url("/images/icon-tel.png");
+    position: absolute;
+    display: block;
+    height: 400px;
+    width: 400px;
+}
+
+@media (min-width: 800px) {
+    .buttonOpen {
+        display: none;
+        justify-content: flex-start;
+        width: 70x;
+        height: 40px;
+        margin: 6px 0;
+        margin-top: 3px;
+    }
+}
+
+@media (max-width: 800px) {
+    .navbar .links {
+        display: none;
+        justify-content: space-between;
+        gap: 4rem;
+    }
+
 }

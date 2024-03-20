@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&family=Sofia+Sans+Extra+Condensed:ital,wght@0,1..1000;1,1..1000&family=Ysabeau+SC:wght@1..1000&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    justify-content: space-between;
+    background: linear-gradient(178deg, #f7146b 40%, #7e7b7bbb 70%);
+    height: 5vh;
+    border-radius: 0 0 10px 10px;
+}
+
+/* header nav {} */
+
+.logo {
+    .logo {
+        color: whitesmoke;
+        margin: 0.4rem;
+        width: 3rem;
+    }
+}
+
+main {
+    background-image: url(/Trombi/Logos/original.jpeg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    color: #f8146c;
+    display: flex;
+    justify-content: center;
+    font-family: 'Ysabeau SC', sans-serif;
+    font-size: 100px;
+}
+
+p {
+    color: #f8146c;
+    display: flex;
+    justify-content: center;
+    font-family: 'Ysabeau SC', sans-serif;
+    font-size: 45px;
+}
+
+section {
+    width: 100rem;
+    height: 100rem;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.635);
+    border-radius: 10%;
+}
+
+
+.logo_center {
+    background-color: #f7146b;
+    width: 15rem;
+    height: 15rem;
+    z-index: 1;
+    position: absolute;
+    left: 42.5rem;
+    top: 42.5rem;
+    background-image: url(./logos/logo.svg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    border: solid 1px grey;
+
+}
+
+.Alex {
+    position: absolute;
+    width: 10rem;
+    height: 10rem;
+    z-index: 2;
+    left: 45rem;
+    top: 28rem;
+    background-image: url(alexandre.png);
+    background-size: cover;
+    border-radius: 50%;
+    border: solid 1px grey;
+}
+
+.Ali {
+    position: absolute;
+    width: 10rem;
+    height: 10rem;
+    z-index: 3;
+    left: 56rem;
+    top: 32rem;
+    background-image: url(ali.png);
+    background-size: cover;
+    border-radius: 50%;
+    border: solid 1px grey;
+}
+
+.Anae {
+    position: absolute;
+    width: 10rem;
+    height: 10rem;
+    z-index: 2;
+    left: 61rem;
+    top: 42rem;
+    background-image: url(anae.png);
+    background-size: cover;
+    border-radius: 50%;
+    border: solid 1px grey;
+}
+
+.David {
+    position: absolute;
+    width: 10rem;
+    height: 10rem;
+    z-index: 4;
+    left: 60rem;
+    top: 53rem;
+    background-image: url(david.png);
+    background-size: cover;
+    border-radius: 50%;
+    border: solid 1px grey;
+}
+
+.Gabriel {
+    position: absolute;
+    width: 10rem;
+    height: 10rem;
+    z-index: 2;
+    left: 51.5rem;
+    top: 61rem;
+    background-image: url(gabriel.png);
+    background-size: cover;
+    border-radius: 50%;
+    border: solid 1px grey;
+}
+
+.Julien {
+    position: absolute;
+    width: 10rem;
+    height: 10rem;
+    z-index: 2;
+    left: 39rem;
+    top: 61rem;
+    background-image: url(julien.png);
+    background-size: cover;
+    border-radius: 50%;
+    border: solid 1px grey;
+}
+
+.Matth {
+    position: absolute;
+    width: 10rem;
+    height: 10rem;
+    z-index: 2;
+    left: 30rem;
+    top: 53rem;
+    background-image: url(matt.png);
+    background-size: cover;
+    border-radius: 50%;
+    border: solid 1px grey;
+}
+
+.Niko {
+    position: absolute;
+    width: 10rem;
+    height: 10rem;
+    z-index: 2;
+    left: 29rem;
+    top: 42rem;
+    background-image: url(niko.png);
+    background-size: cover;
+    border-radius: 50%;
+    border: solid 1px grey;
+}
+
+.Phil {
+    position: absolute;
+    width: 10rem;
+    height: 10rem;
+    z-index: 2;
+    left: 34rem;
+    top: 32rem;
+    background-size: cover;
+    background-image: url(phil.png);
+    border-radius: 50%;
+    border: solid 1px grey;
+}
+
+/* footer */
+
+.icoFaceBook {
+    width: 4.2rem;
+}
+
+.icoGitHub {
+    width: 4.2rem;
+}
+
+.icoInstagram {
+    width: 4.2rem;
+}
+
+.icoLinkedIn {
+    width: 4.2rem;
+}
+
+.icoTwitter {
+    width: 4.2rem;
+}
+
+footer {
+    line-height: 1.5;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(-2deg, #f7146b 40%, #928686bb 70%);
+    border-radius: 10px 10px 0 0;
+}
+
+/* footer 1 */
+
+.socialNetwork ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    padding-left: 0rem;
+}
+
+.socialNetwork ul li {
+    list-style: none;
+}
+
+.menuFooter ul {
+    padding-left: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.menuFooter ul li {
+    height: 18px;
+    list-style: none;
+    padding-left: 1rem;
+    /* padding-right: 1rem; */
+}
+
+.menuFooter ul li a {
+    color: white;
+}
+
+.footerWCS {
+    text-align: center;
+    color: white;
+    padding-bottom: 1rem;
+}
