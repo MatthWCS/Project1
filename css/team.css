@@ -1,24 +1,27 @@
-@font-face {
+@import url('https://fonts.googleapis.com/css2?family=Ysabeau+SC:wght@1..1000&display=swap');
+
+/* @font-face {
     font-family: "FilsonProBlack";
     src: url("../fonts/FilsonProBlack.otf");
-}
+} */
 
 * {
     box-sizing: border-box;
-    margin: 0;
+
     padding: 0;
 }
 
 h1 h2 p li {
     color: whitesmoke;
-    font-family: "FilsonProBlack", sans-serif;
+    font-family: "Ysabeau SC", sans-serif;
 }
 
 body {
+    margin: 0;
     background-attachment: fixed;
     background-image: url(../images/backgroud_team.webp);
     background-size: cover;
-    font-family: "FilsonProBlack", sans-serif;
+    font-family: "Ysabeau SC", sans-serif;
 }
 
 /* header */
@@ -313,10 +316,11 @@ section h2 {
 }
 
 footer {
+
     display: flex;
     flex-direction: column;
-    line-height: 1.5;
-    height: auto;
+    /* line-height: 1.5; */
+    height: 8rem;
     background: linear-gradient(-2deg, #f7146b 40%, #adababbb 70%);
     border-radius: 10px 10px 0 0;
 }
@@ -324,6 +328,7 @@ footer {
 /* footer 1 */
 
 .socialNetwork ul {
+    margin: 0;
     display: flex;
     flex-direction: row;
     justify-content: start;
@@ -334,13 +339,12 @@ footer {
 }
 
 .menuFooter ul {
-    padding-left: 0;
+    margin: 0;
     display: flex;
     flex-direction: row;
     justify-content: center;
     margin-left: auto;
     margin-right: auto;
-    padding-bottom: 1rem;
 }
 
 .menuFooter ul li {
@@ -356,8 +360,6 @@ footer {
 .footerWCS {
     text-align: center;
     color: white;
-    padding-bottom: 1.5rem;
-    padding-top: 1rem;
 }
 
 /* Ici commence le menu buger /* 
