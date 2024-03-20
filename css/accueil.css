@@ -1,21 +1,16 @@
-@font-face {
-    font-family: "FilsonProBlack";
-    src: url("../fonts/FilsonProBlack.otf");
-}
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&family=Sofia+Sans+Extra+Condensed:ital,wght@0,1..1000;1,1..1000&family=Ysabeau+SC:wght@1..1000&display=swap');
 
 * {
     box-sizing: border-box;
     margin: 0;
 }
 
-/* header */
-
 header {
     display: flex;
     flex-direction: row;
     justify-content: start;
     justify-content: space-between;
-    background: linear-gradient(178deg, #f7146b 40%, #ffffffbb 70%);
+    background: linear-gradient(178deg, #f7146b 40%, #7e7b7bbb 70%);
     height: 5vh;
     border-radius: 0 0 10px 10px;
 }
@@ -23,13 +18,16 @@ header {
 /* header nav {} */
 
 .logo {
-    color: whitesmoke;
-    margin: 0.4rem;
-    width: 3rem;
+    .logo {
+        color: whitesmoke;
+        margin: 0.4rem;
+        width: 3rem;
+    }
 }
 
 main {
-    background-color: #e3e3e3;
+    background-image: url(/Trombi/Logos/original.jpeg);
+    background-size: cover;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -37,21 +35,27 @@ main {
 
 h1 {
     color: #f8146c;
-    text-align: center;
-    margin: 0 auto 0 auto;
+    display: flex;
+    justify-content: center;
+    font-family: 'Ysabeau SC', sans-serif;
+    font-size: 100px;
 }
 
 p {
     color: #f8146c;
-    text-align: center;
-    margin: 0 auto 0 auto;
+    display: flex;
+    justify-content: center;
+    font-family: 'Ysabeau SC', sans-serif;
+    font-size: 45px;
 }
 
 section {
-    height: 1200px;
-    margin: 0 auto 0 auto;
     width: 100rem;
-    /* height: 100rem; */
+    height: 100rem;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.635);
+    border-radius: 10%;
 }
 
 
@@ -63,7 +67,7 @@ section {
     position: absolute;
     left: 42.5rem;
     top: 42.5rem;
-    background-image: url(/logos/logo.svg);
+    background-image: url(./logos/logo.svg);
     background-size: cover;
     background-position: center;
     border-radius: 50%;
@@ -78,7 +82,7 @@ section {
     z-index: 2;
     left: 45rem;
     top: 28rem;
-    background-image: url(/avatar/alexandre.png);
+    background-image: url(alexandre.png);
     background-size: cover;
     border-radius: 50%;
     border: solid 1px grey;
@@ -91,7 +95,7 @@ section {
     z-index: 3;
     left: 56rem;
     top: 32rem;
-    background-image: url(/avatar/ali.png);
+    background-image: url(ali.png);
     background-size: cover;
     border-radius: 50%;
     border: solid 1px grey;
@@ -104,7 +108,7 @@ section {
     z-index: 2;
     left: 61rem;
     top: 42rem;
-    background-image: url(/avatar/anae.png);
+    background-image: url(anae.png);
     background-size: cover;
     border-radius: 50%;
     border: solid 1px grey;
@@ -117,7 +121,7 @@ section {
     z-index: 4;
     left: 60rem;
     top: 53rem;
-    background-image: url(/avatar/david.png);
+    background-image: url(david.png);
     background-size: cover;
     border-radius: 50%;
     border: solid 1px grey;
@@ -130,7 +134,7 @@ section {
     z-index: 2;
     left: 51.5rem;
     top: 61rem;
-    background-image: url(/avatar/gabriel.png);
+    background-image: url(gabriel.png);
     background-size: cover;
     border-radius: 50%;
     border: solid 1px grey;
@@ -143,7 +147,7 @@ section {
     z-index: 2;
     left: 39rem;
     top: 61rem;
-    background-image: url(/avatar/julien.png);
+    background-image: url(julien.png);
     background-size: cover;
     border-radius: 50%;
     border: solid 1px grey;
@@ -156,7 +160,7 @@ section {
     z-index: 2;
     left: 30rem;
     top: 53rem;
-    background-image: url(/avatar/matt.png);
+    background-image: url(matt.png);
     background-size: cover;
     border-radius: 50%;
     border: solid 1px grey;
@@ -169,7 +173,7 @@ section {
     z-index: 2;
     left: 29rem;
     top: 42rem;
-    background-image: url(/avatar/niko.png);
+    background-image: url(niko.png);
     background-size: cover;
     border-radius: 50%;
     border: solid 1px grey;
@@ -183,7 +187,7 @@ section {
     left: 34rem;
     top: 32rem;
     background-size: cover;
-    background-image: url(/avatar/phil.png);
+    background-image: url(phil.png);
     border-radius: 50%;
     border: solid 1px grey;
 }
@@ -191,23 +195,23 @@ section {
 /* footer */
 
 .icoFaceBook {
-    width: 2.2rem;
+    width: 4.2rem;
 }
 
 .icoGitHub {
-    width: 2.2rem;
+    width: 4.2rem;
 }
 
 .icoInstagram {
-    width: 2.2rem;
+    width: 4.2rem;
 }
 
 .icoLinkedIn {
-    width: 2.2rem;
+    width: 4.2rem;
 }
 
 .icoTwitter {
-    width: 2.2rem;
+    width: 4.2rem;
 }
 
 footer {
@@ -215,7 +219,7 @@ footer {
     height: auto;
     display: flex;
     flex-direction: column;
-    background: linear-gradient(-2deg, #f7146b 40%, #ffffffbb 70%);
+    background: linear-gradient(-2deg, #f7146b 40%, #928686bb 70%);
     border-radius: 10px 10px 0 0;
 }
 
@@ -257,80 +261,4 @@ footer {
     text-align: center;
     color: white;
     padding-bottom: 1rem;
-}
-
-/* Ici commence le menu buger /* 
-
- /* Sidenav menu */
-.nav_principal {
-    height: 100%;
-    width: 100%;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: -3000px;
-    background-color: rgba(110, 3, 101, 0.425);
-    padding-top: 60px;
-    transition: left 0.5s ease;
-    display: flex;
-    justify-content: center;
-
-    align-items: center;
-}
-
-.nav_principal ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
-
-.nav_principal a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: black;
-    display: block;
-    transition: 0.15s;
-    color: white;
-}
-
-.nav_principal a:hover {
-    color: #871B94;
-}
-
-.nav_principal.active {
-    left: 0;
-}
-
-.nav_principal .close {
-    position: absolute;
-    top: 0;
-    left: -5px;
-    font-size: 36px;
-    color: #ffffff00;
-}
-
-.burger-icon span {
-    display: block;
-    justify-content: flex-start;
-    width: 35px;
-    height: 5px;
-    margin: 6px 0;
-}
-
-.buttonOpen {
-    display: block;
-    justify-content: flex-start;
-    width: 70x;
-    height: 40px;
-    margin: 6px 0;
-    margin-top: 3px;
-}
-
-.buttonClose {
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    width: 70x;
-    height: 40px;
 }
