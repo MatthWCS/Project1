@@ -1,13 +1,12 @@
 @font-face {
     font-family: "FilsonProBlack";
     src: url("../fonts/FilsonProBlack.otf");
-
 }
 
 * {
     box-sizing: border-box;
     margin: 0;
-
+    padding: 0;
 }
 
 h1 h2 p li {
@@ -16,9 +15,9 @@ h1 h2 p li {
 }
 
 body {
-    background-image: url(../images/Travail-dequipe-Mag-min.jpg.webp);
+    background-attachment: fixed;
+    background-image: url(../images/backgroud_team.webp);
     background-size: cover;
-    /* background-color: #e3e3e3; */
     font-family: "FilsonProBlack", sans-serif;
 }
 
@@ -29,12 +28,31 @@ header {
     flex-direction: row;
     justify-content: start;
     justify-content: space-between;
-    background: linear-gradient(178deg, #f7146b 40%, #ffffffbb 70%);
-    height: 5vh;
+    background: linear-gradient(178deg, #f7146b 40%, #adababbb 70%);
+    height: auto;
     border-radius: 0 0 10px 10px;
 }
 
 /* header nav {} */
+
+.nav_desktop {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style: none;
+    padding-left: 0;
+}
+
+.nav_desktop li {
+
+    padding-left: 0.5rem;
+}
+
+.nav_desktop li a {
+    color: whitesmoke;
+    text-decoration: none;
+
+}
 
 .logo {
     color: whitesmoke;
@@ -94,7 +112,6 @@ section h1 {
     text-align: center;
 }
 
-
 .ligneSeparative {
     width: 100%;
     margin: 0;
@@ -125,14 +142,13 @@ section h1 {
     text-align: center;
 }
 
-
 .Vincent {
     margin-left: auto;
     margin-right: auto;
     width: 5.5rem;
     height: 5.5rem;
     z-index: 1;
-    background-image: url(../avatar/Vincent.htm);
+    background-image: url(/avatar/vincent.htm);
     background-size: cover;
     border-radius: 50%;
     border: solid 1px grey;
@@ -144,7 +160,7 @@ section h1 {
     width: 5rem;
     height: 5rem;
     z-index: 1;
-    background-image: url(../avatar/Alex.htm);
+    background-image: url(/avatar/alexandre.png);
     background-size: cover;
     border-radius: 50%;
     border: solid 1px grey;
@@ -156,7 +172,7 @@ section h1 {
     width: 5rem;
     height: 5rem;
     z-index: 1;
-    background-image: url(../avatar/Ali.htm);
+    background-image: url(/avatar/ali.png);
     background-size: cover;
     border-radius: 50%;
     border: solid 1px grey;
@@ -168,7 +184,7 @@ section h1 {
     width: 5rem;
     height: 5rem;
     z-index: 1;
-    background-image: url(../avatar/Anae.htm);
+    background-image: url(/avatar/anae.png);
     background-size: cover;
     border-radius: 50%;
     border: solid 1px grey;
@@ -180,7 +196,7 @@ section h1 {
     width: 5rem;
     height: 5rem;
     z-index: 1;
-    background-image: url(../avatar/David.png);
+    background-image: url(/avatar/david.png);
     background-size: cover;
     border-radius: 50%;
     border: solid 1px grey;
@@ -192,7 +208,7 @@ section h1 {
     width: 5rem;
     height: 5rem;
     z-index: 1;
-    background-image: url(../avatar/Gabriel.htm);
+    background-image: url(/avatar/gabriel.png);
     background-size: cover;
     border-radius: 50%;
     border: solid 1px grey;
@@ -204,7 +220,7 @@ section h1 {
     width: 5rem;
     height: 5rem;
     z-index: 1;
-    background-image: url(../avatar/Julien.htm);
+    background-image: url(/avatar/julien.png);
     background-size: cover;
     border-radius: 50%;
     border: solid 1px grey;
@@ -216,7 +232,7 @@ section h1 {
     width: 5rem;
     height: 5rem;
     z-index: 1;
-    background-image: url(../avatar/Matth.htm);
+    background-image: url(/avatar/matt.png);
     background-size: cover;
     border-radius: 50%;
     border: solid 1px grey;
@@ -228,7 +244,7 @@ section h1 {
     width: 5rem;
     height: 5rem;
     z-index: 1;
-    background-image: url(../avatar/Niko.jpg);
+    background-image: url(/avatar/niko.png);
     background-size: cover;
     border-radius: 50%;
     border: solid 1px grey;
@@ -240,12 +256,11 @@ section h1 {
     width: 5rem;
     height: 5rem;
     z-index: 1;
-    background-image: url(../avatar/Phil.jpg);
+    background-image: url(/avatar/phil.png);
     background-size: cover;
     border-radius: 50%;
     border: solid 1px grey;
 }
-
 
 /* seconde section */
 
@@ -267,7 +282,6 @@ section h2 {
     width: 100%;
 }
 
-
 .presentation p {
     color: #363636;
     display: flex;
@@ -279,31 +293,31 @@ section h2 {
 /* footer */
 
 .icoFaceBook {
-    width: 2.2rem;
+    width: 3rem;
 }
 
 .icoGitHub {
-    width: 2.2rem;
+    width: 3rem;
 }
 
 .icoInstagram {
-    width: 2.2rem;
+    width: 3rem;
 }
 
 .icoLinkedIn {
-    width: 2.2rem;
+    width: 3rem;
 }
 
 .icoTwitter {
-    width: 2.2rem;
+    width: 3rem;
 }
 
 footer {
-    line-height: 1.5;
-    height: auto;
     display: flex;
     flex-direction: column;
-    background: linear-gradient(-2deg, #f7146b 40%, #ffffffbb 70%);
+    line-height: 1.5;
+    height: auto;
+    background: linear-gradient(-2deg, #f7146b 40%, #adababbb 70%);
     border-radius: 10px 10px 0 0;
 }
 
@@ -313,7 +327,6 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: start;
-    padding-left: 0rem;
 }
 
 .socialNetwork ul li {
@@ -327,14 +340,13 @@ footer {
     justify-content: center;
     margin-left: auto;
     margin-right: auto;
-
+    padding-bottom: 1rem;
 }
 
 .menuFooter ul li {
     height: 18px;
     list-style: none;
     padding-left: 1rem;
-    /* padding-right: 1rem; */
 }
 
 .menuFooter ul li a {
@@ -344,7 +356,8 @@ footer {
 .footerWCS {
     text-align: center;
     color: white;
-    padding-bottom: 1rem;
+    padding-bottom: 1.5rem;
+    padding-top: 1rem;
 }
 
 /* Ici commence le menu buger /* 
@@ -362,7 +375,6 @@ footer {
     transition: left 0.5s ease;
     display: flex;
     justify-content: center;
-
     align-items: center;
 }
 
@@ -389,85 +401,6 @@ footer {
 .nav_principal.active {
     left: 0;
 }
-
-
-.nav_principal .close {
-    position: absolute;
-    top: 0;
-    left: -5px;
-    font-size: 36px;
-    color: #ffffff00;
-}
-
-.burger-icon span {
-    display: block;
-    justify-content: flex-start;
-    width: 35px;
-    height: 5px;
-    margin: 6px 0;
-}
-
-.buttonOpen {
-    display: block;
-    justify-content: flex-start;
-    width: 70x;
-    height: 40px;
-    margin: 6px 0;
-    margin-top: 3px;
-}
-
-.buttonClose {
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    width: 70x;
-    height: 40px;
-}
-
-
-/* Ici commence le menu buger /* 
-
- /* Sidenav menu */
-.nav_principal {
-    height: 100%;
-    width: 100%;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: -3000px;
-    background-color: rgba(110, 3, 101, 0.425);
-    padding-top: 60px;
-    transition: left 0.5s ease;
-    display: flex;
-    justify-content: center;
-
-    align-items: center;
-}
-
-.nav_principal ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
-
-.nav_principal a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: black;
-    display: block;
-    transition: 0.15s;
-    color: white;
-}
-
-.nav_principal a:hover {
-    color: #871B94;
-}
-
-.nav_principal.active {
-    left: 0;
-}
-
 
 .nav_principal .close {
     position: absolute;
