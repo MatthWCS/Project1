@@ -5,17 +5,11 @@
     padding: 0;
 }
 
-h1 h2 p li {
-    color: whitesmoke;
-    font-family: "Ysabeau SC", sans-serif;
-}
-
 body {
-    margin: 0;
-    background-attachment: fixed;
-    background-image: url(../images/backgroud_team.webp);
-    background-size: cover;
     font-family: "Ysabeau SC", sans-serif;
+    margin: 0;
+    background-image: url(/images/backgroud_team.webp);
+    background-size: cover;
 }
 
 /* header */
@@ -24,7 +18,6 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: start;
-    justify-content: space-between;
     background: linear-gradient(178deg, #f7146b 40%, #adababbb 70%);
     height: auto;
     border-radius: 0 0 10px 10px;
@@ -35,20 +28,18 @@ header {
 .nav_desktop {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    /* justify-content: center; */
     list-style: none;
     padding-left: 0;
 }
 
 .nav_desktop li {
-
     padding-left: 0.5rem;
 }
 
 .nav_desktop li a {
     color: whitesmoke;
     text-decoration: none;
-
 }
 
 .logo {
@@ -73,7 +64,7 @@ main {
 
 section h1 {
     color: whitesmoke;
-    font-size: 38px;
+    font-size: 40px;
     text-align: center;
     padding: 1rem 0 2rem 0;
 }
@@ -113,6 +104,7 @@ section h1 {
 .tableau p {
     color: #363636;
     text-align: center;
+    margin: 0;
 }
 
 .ligneSeparative {
@@ -269,7 +261,7 @@ section h1 {
 
 section h2 {
     text-align: center;
-    font-size: 36px;
+    font-size: 38px;
     padding: 2rem;
     color: whitesmoke;
 }
@@ -291,6 +283,7 @@ section h2 {
     margin: 0 1.5rem;
     padding: 1rem;
     width: auto;
+    font-size: 18px;
 }
 
 /* footer */
@@ -316,10 +309,8 @@ section h2 {
 }
 
 footer {
-
     display: flex;
     flex-direction: column;
-    /* line-height: 1.5; */
     height: 8rem;
     background: linear-gradient(-2deg, #f7146b 40%, #adababbb 70%);
     border-radius: 10px 10px 0 0;
@@ -357,6 +348,10 @@ footer {
     color: white;
 }
 
+.menuFooter a:hover {
+    color: #1d1518;
+}
+
 .footerWCS {
     text-align: center;
     color: white;
@@ -365,6 +360,7 @@ footer {
 /* Ici commence le menu buger /* 
 
  /* Sidenav menu */
+
 .nav_principal {
     height: 100%;
     width: 100%;
@@ -377,7 +373,6 @@ footer {
     transition: left 0.5s ease;
     display: flex;
     justify-content: center;
-
     align-items: center;
 }
 
@@ -447,7 +442,6 @@ footer {
     width: 100%;
     max-width: 1200px;
     height: 60px;
-    background-color: #1d15181e;
     margin: 0 auto;
     display: flex;
     align-items: center;
@@ -465,11 +459,10 @@ footer {
 }
 
 .navbar ul {
-
     display: flex;
     justify-content: center;
     margin-top: 10px;
-    margin-left: 45px;
+    /* margin-left: 45px; */
 }
 
 .navbar li a {
@@ -496,18 +489,16 @@ a:hover span {
     display: block;
     height: 400px;
     width: 400px;
-    /* background-image: url("../images/tel.png"); */
 }
 
 a:hover .card {
-    background-image: url("/images/icon-tel.png");
     position: absolute;
     display: block;
     height: 400px;
     width: 400px;
 }
 
-@media (min-width: 800px) {
+@media screen and (min-width: 800px) {
     .buttonOpen {
         display: none;
         justify-content: flex-start;
@@ -518,11 +509,163 @@ a:hover .card {
     }
 }
 
-@media (max-width: 800px) {
+@media screen and (max-width: 799px) {
     .navbar .links {
         display: none;
         justify-content: space-between;
         gap: 4rem;
     }
+}
 
+@media screen and (min-width: 999px) {
+
+    .T tr td p {
+        color: #363636;
+        text-align: center;
+        margin: 0;
+        font-size: 32px;
+    }
+
+    .ligne1 tr td p {
+        color: #363636;
+        text-align: center;
+        margin: 0;
+        font-size: 26px;
+    }
+
+    .Yavuz {
+        width: 10rem;
+        height: 10rem;
+        z-index: 1;
+        margin-left: auto;
+        margin-right: auto;
+        background-image: url(../avatar/yavuzkutuk.png);
+        background-size: cover;
+        border-radius: 50%;
+        border: solid 1px grey;
+    }
+
+    .Vincent {
+        margin-left: auto;
+        margin-right: auto;
+        width: 7.5rem;
+        height: 7.5rem;
+        z-index: 1;
+        background-image: url(/avatar/vincent.htm);
+        background-size: cover;
+        border-radius: 50%;
+        border: solid 1px grey;
+    }
+
+    .Alex {
+        margin-left: auto;
+        margin-right: auto;
+        width: 7rem;
+        height: 7rem;
+        z-index: 1;
+        background-image: url(/avatar/alexandre.png);
+        background-size: cover;
+        border-radius: 50%;
+        border: solid 1px grey;
+    }
+
+    .Ali {
+        margin-left: auto;
+        margin-right: auto;
+        width: 7rem;
+        height: 7rem;
+        z-index: 1;
+        background-image: url(/avatar/ali.png);
+        background-size: cover;
+        border-radius: 50%;
+        border: solid 1px grey;
+    }
+
+    .Anae {
+        margin-left: auto;
+        margin-right: auto;
+        width: 7rem;
+        height: 7rem;
+        z-index: 1;
+        background-image: url(/avatar/anae.png);
+        background-size: cover;
+        border-radius: 50%;
+        border: solid 1px grey;
+    }
+
+    .David {
+        margin-left: auto;
+        margin-right: auto;
+        width: 7rem;
+        height: 7rem;
+        z-index: 1;
+        background-image: url(/avatar/david.png);
+        background-size: cover;
+        border-radius: 50%;
+        border: solid 1px grey;
+    }
+
+    .Gabriel {
+        margin-left: auto;
+        margin-right: auto;
+        width: 7rem;
+        height: 7rem;
+        z-index: 1;
+        background-image: url(/avatar/gabriel.png);
+        background-size: cover;
+        border-radius: 50%;
+        border: solid 1px grey;
+    }
+
+    .Julien {
+        margin-left: auto;
+        margin-right: auto;
+        width: 7rem;
+        height: 7rem;
+        z-index: 1;
+        background-image: url(/avatar/julien.png);
+        background-size: cover;
+        border-radius: 50%;
+        border: solid 1px grey;
+    }
+
+    .Matth {
+        margin-left: auto;
+        margin-right: auto;
+        width: 7rem;
+        height: 7rem;
+        z-index: 1;
+        background-image: url(/avatar/matt.png);
+        background-size: cover;
+        border-radius: 50%;
+        border: solid 1px grey;
+    }
+
+    .Niko {
+        margin-left: auto;
+        margin-right: auto;
+        width: 7rem;
+        height: 7rem;
+        z-index: 1;
+        background-image: url(/avatar/niko.png);
+        background-size: cover;
+        border-radius: 50%;
+        border: solid 1px grey;
+    }
+
+    .Phil {
+        margin-left: auto;
+        margin-right: auto;
+        width: 7rem;
+        height: 7rem;
+        z-index: 1;
+        background-image: url(/avatar/phil.png);
+        background-size: cover;
+        border-radius: 50%;
+        border: solid 1px grey;
+    }
+
+    /* .presentation p {
+        font-size: 24px;
+    } */
 }
