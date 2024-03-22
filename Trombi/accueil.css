@@ -1,18 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&family=Sofia+Sans+Extra+Condensed:ital,wght@0,1..1000;1,1..1000&family=Ysabeau+SC:wght@1..1000&display=swap');
+
 * {
     box-sizing: border-box;
     margin: 0;
 }
 
-nav {
+header {
     display: flex;
     flex-direction: row;
-    justify-content: end;
-    background-color: #f8146c;
+    justify-content: start;
+    justify-content: space-between;
+    background: linear-gradient(178deg, #f7146b 40%, #7e7b7bbb 70%);
     height: 5vh;
+    border-radius: 0 0 10px 10px;
+}
+
+/* header nav {} */
+
+.logo {
+    .logo {
+        color: whitesmoke;
+        margin: 0.4rem;
+        width: 3rem;
+    }
 }
 
 main {
-    background-color: #e3e3e3;
+    background-image: url(/Trombi/Logos/original.jpeg);
+    background-size: cover;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -22,17 +37,25 @@ h1 {
     color: #f8146c;
     display: flex;
     justify-content: center;
+    font-family: 'Ysabeau SC', sans-serif;
+    font-size: 100px;
 }
 
 p {
     color: #f8146c;
     display: flex;
     justify-content: center;
+    font-family: 'Ysabeau SC', sans-serif;
+    font-size: 45px;
 }
 
 section {
     width: 100rem;
     height: 100rem;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.635);
+    border-radius: 10%;
 }
 
 
@@ -170,38 +193,43 @@ section {
 }
 
 /* footer */
+
 .icoFaceBook {
-    width: 2rem;
+    width: 4.2rem;
 }
 
 .icoGitHub {
-    width: 2rem;
+    width: 4.2rem;
 }
 
 .icoInstagram {
-    width: 2rem;
+    width: 4.2rem;
 }
 
 .icoLinkedIn {
-    width: 2rem;
+    width: 4.2rem;
 }
 
 .icoTwitter {
-    width: 2rem;
+    width: 4.2rem;
 }
 
 footer {
-    height: 10vh;
-    background-color: #f8146c;
+    line-height: 1.5;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(-2deg, #f7146b 40%, #928686bb 70%);
+    border-radius: 10px 10px 0 0;
 }
 
-/* .socialNetwork {} */
+/* footer 1 */
 
 .socialNetwork ul {
     display: flex;
     flex-direction: row;
     justify-content: start;
-
+    padding-left: 0rem;
 }
 
 .socialNetwork ul li {
@@ -209,21 +237,28 @@ footer {
 }
 
 .menuFooter ul {
+    padding-left: 0;
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
 
 }
 
 .menuFooter ul li {
+    height: 18px;
     list-style: none;
-
+    padding-left: 1rem;
+    /* padding-right: 1rem; */
 }
 
 .menuFooter ul li a {
     color: white;
-    text-decoration: none;
 }
 
 .footerWCS {
+    text-align: center;
     color: white;
+    padding-bottom: 1rem;
 }

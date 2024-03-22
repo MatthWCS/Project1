@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&family=Sofia+Sans+Extra+Condensed:ital,wght@0,1..1000;1,1..1000&family=Ysabeau+SC:wght@1..1000&display=swap');
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -10,8 +11,10 @@ header {
     justify-content: start;
     justify-content: space-between;
     background: linear-gradient(178deg, #f7146b 40%, #9b9595bb 70%);
-    height: 5vh;
+    height: 7vh;
     border-radius: 0 0 10px 10px;
+    font-family: 'Ysabeau SC', sans-serif;
+    font-size: 60px;
 }
 
 /* header nav {} */
@@ -22,6 +25,189 @@ header {
         margin: 0.4rem;
         width: 3rem;
     }
+}
+
+.tel {
+    color: whitesmoke;
+    margin: 0.4rem;
+    width: 3rem;
+}
+
+.nav_principal {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: -5000px;
+    background-color: rgba(110, 3, 101, 0.664);
+    padding-top: 60px;
+    transition: left 0.5s ease;
+    display: flex;
+    justify-content: center;
+
+    align-items: center;
+}
+
+.nav_principal ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav_principal a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+    display: block;
+    transition: 0.15s;
+    color: white;
+}
+
+.nav_principal a:hover {
+    color: #871B94;
+}
+
+
+.nav_principal.active {
+    left: 0;
+}
+
+
+.nav_principal .close {
+    position: absolute;
+    top: 0;
+    left: -31px;
+    top: -5px;
+    font-size: 36px;
+    color: #ffffff00;
+}
+
+.burger-icon span {
+    display: block;
+    justify-content: flex-start;
+    width: 35px;
+    height: 5px;
+    margin: 6px 0;
+}
+
+.buttonOpen {
+    display: block;
+    justify-content: flex-end;
+    width: 70x;
+    height: 40px;
+    margin: 6px 0;
+    margin-top: 3px;
+}
+
+.buttonClose {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 70x;
+    height: 40px;
+}
+
+/*Navbar version bureau*/
+.navbar {
+    width: 100%;
+    max-width: 1200px;
+    height: 60px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-decoration: none;
+    font-family: 'Ysabeau SC' sans-serif;
+}
+
+.navbar a:hover {
+    color: #1d1518;
+}
+
+
+.navbar li {
+    list-style: none;
+}
+
+.navbar ul {
+
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    margin-left: 45px;
+}
+
+.navbar li a {
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    font-size: 1.3rem;
+}
+
+.navbar .links {
+    display: flex;
+    justify-content: space-between;
+    gap: 4rem;
+}
+
+
+
+@media (min-width: 800px) {
+    .buttonOpen {
+        display: none;
+        justify-content: flex-start;
+        width: 70x;
+        height: 40px;
+        margin: 6px 0;
+        margin-top: 3px;
+    }
+
+    .container {
+        display: none;
+    }
+}
+
+
+
+@media (max-width: 800px) {
+    .navbar .links {
+        display: none;
+        justify-content: space-between;
+        gap: 4rem;
+    }
+
+    .wilders {
+        display: none;
+    }
+
+    main h1 {
+        font-size: 45px;
+        text-align: center;
+    }
+
+
+}
+
+a span {
+    display: none;
+}
+
+a:hover span {
+    position: absolute;
+    display: block;
+    height: 400px;
+    width: 400px;
+    /* background-image: url("../images/tel.png"); */
+}
+
+a:hover .card {
+    background-image: url("../images/tel.png");
+    position: absolute;
+    display: block;
+    height: 400px;
+    width: 400px;
 }
 
 main {
@@ -38,23 +224,120 @@ h1 {
     font-family: 'Ysabeau SC', sans-serif;
 }
 
-p {
-    font-size: 20px;
+.slide p {
+    font-size: 15px;
+    background-color: #f7146ba5;
+    border-radius: 10%;
+    margin: 2rem;
+    margin-top: 4.5rem;
+
 
 }
 
 section {
     display: flex;
     flex-direction: column;
+    font-family: 'Ysabeau SC', sans-serif;
+
 }
 
 article {
     background-color: rgba(255, 255, 255, 0.553);
-        display: flex;
-        flex-direction: row;
-        border-radius: 20px;
-        margin: 5rem;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    margin: 5rem;
+    font-family: 'Ysabeau SC' sans-serif;
+    font-size: 25px;
+    text-align: center;
 
+}
+
+h2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+/*Carousel*/
+.container {
+    overflow: hidden;
+    background-color: rgba(255, 255, 255, 0.644);
+    border-radius: 25px;
+
+}
+
+.carousel {
+    position: relative;
+}
+
+.carousel-inner {
+    display: flex;
+    overflow: hidden;
+    height: 100vh;
+    flex-wrap: nowrap;
+}
+
+.slide {
+    flex: 0 0 100%;
+    height: 100%;
+    transition: .5s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Ysabeau SC', sans-serif;
+    flex-direction: column;
+
+}
+
+.slide img {
+
+    object-fit: cover;
+    display: flex;
+
+
+}
+
+.carousel-controls {
+    position: absolute;
+    left: 4%;
+    right: 10%;
+    top: 55%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.carousel-controls button {
+    padding: 10px;
+    background-color: #f43f85fb;
+    border-radius: 10%;
+
+}
+
+div button {
+    size: 1px;
+}
+
+.carousel-dots {
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    bottom: 10%;
+    display: flex;
+    justify-content: center;
+}
+
+.carousel-dots .dot {
+    margin: 5px;
+    cursor: pointer;
+}
+
+.carousel-dots .active {
+    border: 10px solid #f7146b !important;
+}
+
+.carousel-dots .inactive {
+    border: 10px solid white;
 }
 
 /* footer */
@@ -86,6 +369,7 @@ footer {
     flex-direction: column;
     background: linear-gradient(-2deg, #f7146b 40%, #928686bb 70%);
     border-radius: 10px 10px 0 0;
+    font-family: 'Ysabeau SC', sans-serif;
 }
 
 /* footer 1 */
@@ -126,81 +410,4 @@ footer {
     text-align: center;
     color: white;
     padding-bottom: 1rem;
-}
-
-/* Ici commence le menu buger /* 
-
- /* Sidenav menu */
-.nav_principal {
-    height: 100%;
-    width: 100%;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: -3000px;
-    background-color: rgba(110, 3, 101, 0.425);
-    padding-top: 60px;
-    transition: left 0.5s ease;
-    display: flex;
-    justify-content: center;
-
-    align-items: center;
-}
-
-.nav_principal ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
-
-.nav_principal a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: black;
-    display: block;
-    transition: 0.15s;
-    color: white;
-}
-
-.nav_principal a:hover {
-    color: #871B94;
-}
-
-.nav_principal.active {
-    left: 0;
-}
-
-
-.nav_principal .close {
-    position: absolute;
-    top: 0;
-    left: -5px;
-    font-size: 36px;
-    color: #ffffff00;
-}
-
-.burger-icon span {
-    display: block;
-    justify-content: flex-start;
-    width: 35px;
-    height: 5px;
-    margin: 6px 0;
-}
-
-.buttonOpen {
-    display: block;
-    justify-content: flex-start;
-    width: 70x;
-    height: 40px;
-    margin: 6px 0;
-    margin-top: 3px;
-}
-
-.buttonClose {
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    width: 70x;
-    height: 40px;
 }
