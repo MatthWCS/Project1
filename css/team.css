@@ -17,9 +17,8 @@ body {
 header {
     display: flex;
     flex-direction: row;
-    justify-content: start;
     background: linear-gradient(178deg, #f7146b 40%, #adababbb 70%);
-    height: auto;
+    height: 7vh;
     border-radius: 0 0 10px 10px;
 }
 
@@ -28,7 +27,6 @@ header {
 .nav_desktop {
     display: flex;
     flex-direction: row;
-    /* justify-content: center; */
     list-style: none;
     padding-left: 0;
 }
@@ -48,11 +46,123 @@ header {
     width: 3rem;
 }
 
-.tel {
-    color: whitesmoke;
-    margin: 0.4rem;
-    width: 3rem;
+/* Ici commence le menu buger /* 
+
+ /* Sidenav menu */
+
+.nav_principal {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: -3000px;
+    background-color: rgba(110, 3, 101, 0.664);
+    padding-top: 60px;
+    transition: left 0.5s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+.nav_principal ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav_principal a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+    display: block;
+    transition: 0.15s;
+    color: white;
+}
+
+.nav_principal a:hover {
+    color: #871B94;
+}
+
+.nav_principal.active {
+    left: 0;
+}
+
+.nav_principal .close {
+    position: absolute;
+    top: 0;
+    left: -31px;
+    top: -5px;
+    font-size: 36px;
+    color: #ffffff00;
+}
+
+.burger-icon span {
+    display: block;
+    justify-content: flex-start;
+    width: 35px;
+    height: 5px;
+    margin: 6px 0;
+}
+
+.buttonOpen {
+    display: block;
+    justify-content: flex-end;
+    width: 70x;
+    height: 40px;
+    margin: 6px 0;
+    margin-top: 3px;
+}
+
+.buttonClose {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 70x;
+    height: 40px;
+}
+
+/*Navbar version bureau*/
+
+.navbar {
+    width: 100%;
+    height: 60px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    color: #1d1518;
+}
+
+
+.navbar li {
+    list-style: none;
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    margin-left: 45px;
+}
+
+.navbar li a {
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    font-size: 1.3rem;
+}
+
+.navbar .links {
+    display: flex;
+    justify-content: space-between;
+    gap: 4rem;
+}
+
 
 /* main */
 
@@ -357,147 +467,6 @@ footer {
     color: white;
 }
 
-/* Ici commence le menu buger /* 
-
- /* Sidenav menu */
-
-.nav_principal {
-    height: 100%;
-    width: 100%;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: -3000px;
-    background-color: rgba(110, 3, 101, 0.664);
-    padding-top: 60px;
-    transition: left 0.5s ease;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.nav_principal ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
-
-.nav_principal a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: black;
-    display: block;
-    transition: 0.15s;
-    color: white;
-}
-
-.nav_principal a:hover {
-    color: #871B94;
-}
-
-
-.nav_principal.active {
-    left: 0;
-}
-
-
-.nav_principal .close {
-    position: absolute;
-    top: 0;
-    left: -31px;
-    top: -5px;
-    font-size: 36px;
-    color: #ffffff00;
-}
-
-.burger-icon span {
-    display: block;
-    justify-content: flex-start;
-    width: 35px;
-    height: 5px;
-    margin: 6px 0;
-}
-
-.buttonOpen {
-    display: block;
-    justify-content: flex-end;
-    width: 70x;
-    height: 40px;
-    margin: 6px 0;
-    margin-top: 3px;
-}
-
-.buttonClose {
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    width: 70x;
-    height: 40px;
-}
-
-/*Navbar version bureau*/
-
-.navbar {
-    width: 100%;
-    max-width: 1200px;
-    height: 60px;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    text-decoration: none;
-}
-
-.navbar a:hover {
-    color: #1d1518;
-}
-
-
-.navbar li {
-    list-style: none;
-}
-
-.navbar ul {
-    display: flex;
-    justify-content: center;
-    margin-top: 10px;
-    /* margin-left: 45px; */
-}
-
-.navbar li a {
-    text-decoration: none;
-    list-style: none;
-    color: white;
-    font-size: 1.3rem;
-}
-
-.navbar .links {
-    display: flex;
-    justify-content: space-between;
-    gap: 4rem;
-}
-
-/* bouton tel */
-
-a span {
-    display: none;
-}
-
-a:hover span {
-    position: absolute;
-    display: block;
-    height: 400px;
-    width: 400px;
-}
-
-a:hover .card {
-    position: absolute;
-    display: block;
-    height: 400px;
-    width: 400px;
-}
-
 @media screen and (min-width: 800px) {
     .buttonOpen {
         display: none;
@@ -665,7 +634,4 @@ a:hover .card {
         border: solid 1px grey;
     }
 
-    /* .presentation p {
-        font-size: 24px;
-    } */
 }

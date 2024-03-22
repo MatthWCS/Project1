@@ -3,7 +3,6 @@
 * {
     box-sizing: border-box;
     padding: 0;
-    margin: 0;
 }
 
 body {
@@ -11,7 +10,6 @@ body {
     margin: 0;
     background-image: url(/images/original.jpeg);
     background-size: cover;
-
 }
 
 /* header */
@@ -19,9 +17,8 @@ body {
 header {
     display: flex;
     flex-direction: row;
-    justify-content: start;
     background: linear-gradient(178deg, #f7146b 40%, #adababbb 70%);
-    height: auto;
+    height: 7vh;
     border-radius: 0 0 10px 10px;
 }
 
@@ -30,7 +27,6 @@ header {
 .nav_desktop {
     display: flex;
     flex-direction: row;
-    /* justify-content: center; */
     list-style: none;
     padding-left: 0;
 }
@@ -50,11 +46,123 @@ header {
     width: 3rem;
 }
 
-.tel {
-    color: whitesmoke;
-    margin: 0.4rem;
-    width: 3rem;
+/* Ici commence le menu buger /* 
+
+ /* Sidenav menu */
+
+.nav_principal {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: -3000px;
+    background-color: rgba(110, 3, 101, 0.664);
+    padding-top: 60px;
+    transition: left 0.5s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+.nav_principal ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav_principal a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+    display: block;
+    transition: 0.15s;
+    color: white;
+}
+
+.nav_principal a:hover {
+    color: #871B94;
+}
+
+.nav_principal.active {
+    left: 0;
+}
+
+.nav_principal .close {
+    position: absolute;
+    top: 0;
+    left: -31px;
+    top: -5px;
+    font-size: 36px;
+    color: #ffffff00;
+}
+
+.burger-icon span {
+    display: block;
+    justify-content: flex-start;
+    width: 35px;
+    height: 5px;
+    margin: 6px 0;
+}
+
+.buttonOpen {
+    display: block;
+    justify-content: flex-end;
+    width: 70x;
+    height: 40px;
+    margin: 6px 0;
+    margin-top: 3px;
+}
+
+.buttonClose {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 70x;
+    height: 40px;
+}
+
+/*Navbar version bureau*/
+
+.navbar {
+    width: 100%;
+    height: 60px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    color: #1d1518;
+}
+
+
+.navbar li {
+    list-style: none;
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    margin-left: 45px;
+}
+
+.navbar li a {
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    font-size: 1.3rem;
+}
+
+.navbar .links {
+    display: flex;
+    justify-content: space-between;
+    gap: 4rem;
+}
+
 
 /* main */
 
@@ -63,42 +171,45 @@ main {
     flex-direction: column;
     align-items: center;
     padding: 1rem;
-    height: 80vh;
+    height: 83vh;
 }
 
-h1 {
+.titres {
     color: #f8146c;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     font-family: 'Ysabeau SC', sans-serif;
+}
+
+.titres h1 {
     font-size: 40px;
-    margin: 3rem auto 2rem;
-
+    margin: 1rem auto 1rem;
 }
 
-h2 {
-    color: #f8146c;
-    display: flex;
-    justify-content: center;
-    font-family: 'Ysabeau SC', sans-serif;
-    font-size: 28px;
-    margin: 2rem auto;
+.titres h2 {
+    font-size: 26px;
+    margin: 2rem auto 3rem;
 }
 
 #conteneur {
-    margin-top: 6rem;
-    width: 60vw;
-    height: 60vw;
+    margin-top: 5rem;
+    /* margin-left: auto;
+    margin-right: auto; */
+    /* margin-bottom: 1rem; */
+    width: 18rem;
+    height: 18rem;
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
 
 .av {
     display: block;
     position: absolute;
-    transform: translate(-2.1rem, -2rem);
+    transform: translate(-2.5rem, -2.5rem);
 }
 
 .logo_center {
@@ -231,6 +342,8 @@ footer {
     border-radius: 10px 10px 0 0;
 }
 
+
+
 .socialNetwork ul {
     margin: 0;
     display: flex;
@@ -270,145 +383,13 @@ footer {
     color: white;
 }
 
-/* Ici commence le menu buger /* 
+@media screen and (max-width: 799px) {
+    .navbar .links {
+        display: none;
+        justify-content: space-between;
+        gap: 4rem;
+    }
 
- /* Sidenav menu */
-
-.nav_principal {
-    height: 100%;
-    width: 100%;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: -3000px;
-    background-color: rgba(110, 3, 101, 0.664);
-    padding-top: 60px;
-    transition: left 0.5s ease;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.nav_principal ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
-
-.nav_principal a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: black;
-    display: block;
-    transition: 0.15s;
-    color: white;
-}
-
-.nav_principal a:hover {
-    color: #871B94;
-}
-
-
-.nav_principal.active {
-    left: 0;
-}
-
-
-.nav_principal .close {
-    position: absolute;
-    top: 0;
-    left: -31px;
-    top: -5px;
-    font-size: 36px;
-    color: #ffffff00;
-}
-
-.burger-icon span {
-    display: block;
-    justify-content: flex-start;
-    width: 35px;
-    height: 5px;
-    margin: 6px 0;
-}
-
-.buttonOpen {
-    display: block;
-    justify-content: flex-end;
-    width: 70x;
-    height: 40px;
-    margin: 6px 0;
-    margin-top: 3px;
-}
-
-.buttonClose {
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    width: 70x;
-    height: 40px;
-}
-
-/*Navbar version bureau*/
-
-.navbar {
-    width: 100%;
-    max-width: 1200px;
-    height: 60px;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    text-decoration: none;
-}
-
-.navbar a:hover {
-    color: #1d1518;
-}
-
-
-.navbar li {
-    list-style: none;
-}
-
-.navbar ul {
-    display: flex;
-    justify-content: center;
-    margin-top: 10px;
-    margin-left: 45px;
-}
-
-.navbar li a {
-    text-decoration: none;
-    list-style: none;
-    color: white;
-    font-size: 1.3rem;
-}
-
-.navbar .links {
-    display: flex;
-    justify-content: space-between;
-    gap: 4rem;
-}
-
-/* bouton tel */
-
-a span {
-    display: none;
-}
-
-a:hover span {
-    position: absolute;
-    display: block;
-    height: 400px;
-    width: 400px;
-}
-
-a:hover .card {
-    position: absolute;
-    display: block;
-    height: 400px;
-    width: 400px;
 }
 
 @media screen and (min-width: 800px) {
@@ -420,12 +401,5 @@ a:hover .card {
         margin: 6px 0;
         margin-top: 3px;
     }
-}
 
-@media screen and (max-width: 799px) {
-    .navbar .links {
-        display: none;
-        justify-content: space-between;
-        gap: 4rem;
-    }
 }
