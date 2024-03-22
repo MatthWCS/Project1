@@ -15,10 +15,14 @@
 }
 
 
+
 body {
     background-image: url(../images/background-contact.svg);
     background-attachment: fixed;
     background-size: cover;
+    font-family: "Ysabeau SC";
+
+
     /* background-color: #e3e3e3; */
 }
 
@@ -27,12 +31,11 @@ body {
 header {
     display: flex;
     flex-direction: row;
-    justify-content: start;
     justify-content: space-between;
     /* background-color: #f8146cea; */
     /* background-image: url(../images/formation_image_01.webp);
     background-size: cover; */
-    background: linear-gradient(178deg, #1f09e7b2 40%, #adababbb 70%);
+    background: linear-gradient(178deg, #2406ce 40%, #adababbb 70%);
     height: 7vh;
     border-radius: 0 0 10px 10px;
 }
@@ -105,7 +108,7 @@ footer {
     display:flexbox;
     line-height: 1.5;
     height: auto;
-    background: linear-gradient(-2deg, #2808b8 40%, #adababbb 70%);
+    background: linear-gradient(-2deg, #2406ce 40%, #adababbb 70%);
     border-radius: 10px 10px 0 0;
     /* background-image: url(../images/footer-1.png);
     background-size: cover; */
@@ -139,18 +142,21 @@ footer {
     flex-direction: row;
     justify-content: center;
     padding-left: 0;
+    padding-top:-40px;
 
 }
 
 .menuFooter ul li {
     list-style: none;
     padding-left: 2rem;
+    padding-top:-40px;
 
 
 }
 
 .menuFooter ul li a {
     color: white;
+    padding-top:-40px;
  
 }
 
@@ -158,11 +164,13 @@ footer {
     text-align: center;
     color: white;
     padding-top: 1rem;
+    padding-top: -40px;
 
 }
 
 
 .nav_principal {
+
     height: 100%;
     width: 100%;
     position: fixed;
@@ -244,7 +252,6 @@ footer {
     width: 100%;
     height: 60px;
    background-color: #1d15181e;
-   margin: 0 auto;
   display: flex;
      align-items: center;
     justify-content: space-between;
@@ -290,6 +297,9 @@ font-size: 1.3rem;
         margin: 6px 0;
         margin-top: 3px;
     }
+    .chepas2{
+        height: 480px;
+    }
 }
 
 @media (max-width: 799px){
@@ -298,8 +308,37 @@ font-size: 1.3rem;
         justify-content: space-between;
         gap: 4rem;
      }
+
+     .container{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-evenly;
+        height: 550px;
+        align-items: center;
+        margin-top: 200px;
+    }
+
+    main {
+        /* background-image: url(../images/Travail-dequipe-Mag-min.jpg.webp);
+        background-size: cover; */
+        /* background-color: #e3e3e3; */
+        padding: 1rem;
+        height: 130.2vh;
+    }
+
+    h1 {
+
+        color: rgb(8, 8, 8);
+        font-size: 40px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        padding: 1rem 0 2rem 0;
+
         
-}
+    }
+    
+    
 
     
 .section_formulaire {
@@ -307,11 +346,63 @@ font-size: 1.3rem;
 font-size: 20px;
 background-color: #adababbb;
 width: 450px;
+margin-top: 45px;
+border-radius: 3rem ;
+}
+
+/* Media queries pour le navigateur chrome uniquement.*/
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    
+    .container{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-evenly;
+        height: 550px;
+        align-items: center;
+        margin-top: 520px;
+    }
+}
+
+/* Media queries pour le navigateur firefox uniquement.*/
+@media all and (min--moz-device-pixel-ratio:0) and (max-width: 800px){
+
+    .container{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-evenly;
+        height: 550px;
+        align-items: center;
+        margin-top: 250px;
+    }
+}
+
+
+
+
+        
+}
+
+ 
+#myForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+
+.section_formulaire {
+    color:white;
+font-size: 20px;
+background-color: #adababbb;
+width: 450px;
+border-radius: 3rem ;
 }
     .container{
         display: flex;
         justify-content: space-evenly;
-        height: 500px;
+        height: 550px;
     }
 
     .section_campus {
@@ -319,6 +410,7 @@ width: 450px;
     font-size: 1rem;
     background-color: #adababbb;
     width: 600px;
+    border-radius: 3rem ;
     }
 
     .formo{
@@ -351,49 +443,77 @@ width: 450px;
             width: 400px;
         }
 
-        .prenom {
-            padding-left: 130px;
-        }
-        .email{
+    .firstName {
 
-                padding-left: 138px;
-          
-        }
+        padding-left: 80px;
+        padding-top: 30px;
+    }
 
-        .news{
+    .email {
 
-            padding-left: 138px;
-      
+        padding-left: 91px;
+        padding-top: 15px;
+    }
+
+    .telephone {
+
+        padding-left: 60px;
+        padding-top: 30px;
     }
 
 
-.CCC{
+    .questionSelect {
 
-    padding-left: 138px;
-    padding-top: 50px;
+        padding-left: 80px;
+        padding-top: 20px;
+    }
 
+
+    .message {
+
+        padding-left: 15px; ;
+        padding-top: 20px;
+    }
+
+    .envoyer {
+
+        padding-left: 10px;
+        padding-top: 15px;
+    }
+
+
+    /* Error page */
+
+.errorPanel {
+    padding-top: 100px;
+
+    }
+
+    .errorPanel a{
+        padding-left: 80px;
+        margin-top: 100px;
+        color: white;
+        text-decoration:none ;
+    }
+
+
+    .errorPanel p{
+        padding-left: 80px;
+        margin-top: 80px;
+    }
+
+    .errorPanel a:hover {
+        color: #1d1518;
+      }
+
+
+/*Formulaire validé*/
+.section_formulaire ul{
+    padding-top: 100px;
 }
 
-.missing{
-
-padding-left: 3rem ;
-padding-top: 50px;
-}
 
 
-.missing1{
-
-    padding-left: 100px;
-    
-
-}
-
-.envoyer{
-
-    padding-left: 200px;
-    padding-top: 50px;
-
-}
 
 .logo-main {
 
@@ -402,9 +522,70 @@ padding-top: 50px;
     margin-left: 41px;
 }
 
+
 .java{
     background-color: #ffffff00;
     border: 0px;
-    margin-left: 50px;
+    margin-left: 300x;
+    display: flex;
+    align-items: end;
+    justify-content:flex-end;
+    margin-left: 1000px;
+ 
 
 }
+
+#contenu{
+    height: 150;
+    background-color: #f7146b;
+    width:200px ;
+}
+
+
+.chepas{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content:center ;
+    height: 60px;
+    gap: 2rem;
+    font-size: 1.3rem;
+    text-decoration: none;
+    list-style: none; 
+    padding-top:  1rem;
+}
+
+.chepas a{
+    text-decoration: none;
+    list-style: none;
+    color: white;
+   
+}
+
+
+.chepas1{
+    background-color: #871B94;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+}
+
+
+.chepas2{
+    height: 460px;
+}
+
+.campus{
+display: flex;
+justify-content: center ;
+
+}
+
+.adresse{
+    display: flex;
+    justify-content: center;
+}
+
+.chepas a:hover {
+    color: #1d1518;
+  }
+     

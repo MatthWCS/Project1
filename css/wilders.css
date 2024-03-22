@@ -16,7 +16,6 @@ body {
 header {
     display: flex;
     flex-direction: row;
-    justify-content: start;
     justify-content: space-between;
     background: linear-gradient(178deg, #f7146b 40%, #9b9595bb 70%);
     height: 7vh;
@@ -35,11 +34,7 @@ header {
     }
 }
 
-.tel {
-    color: whitesmoke;
-    margin: 0.4rem;
-    width: 3rem;
-}
+
 
 .nav_principal {
     height: 100%;

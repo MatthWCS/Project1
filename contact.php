@@ -11,16 +11,16 @@
     <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
 
     <!-- Les pages CSS pour changer de style-->
-    <link rel="stylesheet" href="./css/facebook.css">
-    <link rel="stylesheet" href="./css/gitHub.css">
-    <link rel="stylesheet" href="./css/instagram.css">
-    <link rel="stylesheet" href="./css/x.css">
+    <link rel="stylesheet" href="/css/facebook.css">
+    <link rel="stylesheet" href="/css/gitHub.css">
+    <link rel="stylesheet" href="/css/instagram.css">
+    <link rel="stylesheet" href="/css/x.css">
     
     <!--La page CSS principale -->
-    <link rel="stylesheet" type="text/css" href="./css/contact.css" id="mycss" />
+    <link rel="stylesheet" type="text/css" href="/css/contact.css" id="mycss" />
     
-    <script type="text/javascript" src="./js/js.java"></script>
-    <script src="./js/script.js"></script>
+    <script type="text/javascript" src="/js/js.java"></script>
+    <script src="/js/script.js"></script>
 
     <title>Contact</title>
 
@@ -116,7 +116,7 @@
                         </div>
 
                         <div class="envoyer">
-                            <button form="myForm" type="submit"><img src="./"></button>
+                            <button form="myForm" type="submit">ENVOYEZ</button>
                         </div>
                     </form>
                 </div>
@@ -124,15 +124,15 @@
                 <div class="section_campus">
                     <h2 class="campus">Retrouvez nos campus : </h2>
                     <section class="chepas">
-                        <div id=""><a href="#lille" onclick="visual_query('../campus/lille.html','visuelle');">Lille</a>
+                        <div id=""><a href="#lille" onclick="visual_query('/campus/lille.html','visuelle');">Lille</a>
                         </div>
-                        <div id=""><a href="#bordeau" onclick="visual_query('../campus/bordeau.html','visuelle');">Bordeaux</a></div>
-                        <div id=""><a href="#paris" onclick="visual_query('../campus/paris.html','visuelle');">Paris</a>
+                        <div id=""><a href="#bordeau" onclick="visual_query('/campus/bordeaux.html','visuelle');">Bordeaux</a></div>
+                        <div id=""><a href="#paris" onclick="visual_query('/campus/paris.html','visuelle');">Paris</a>
                         </div>
-                        <div id=""><a href="#nante" onclick="visual_query('../campus/nante.html','visuelle');">Nante</a>
+                        <div id=""><a href="#nante" onclick="visual_query('/campus/nantes.html','visuelle');">Nantes</a>
                         </div>
-                        <div id=""><a href="#toulouse" onclick="visual_query('../campus/toulouse.html','visuelle');">Toulouse</a></div>
-                        <div id=""><a href="#lyon" onclick="visual_query('../campus/lyon.html','visuelle');">Lyon</a>
+                        <div id=""><a href="#toulouse" onclick="visual_query('/campus/toulouse.html','visuelle');">Toulouse</a></div>
+                        <div id=""><a href="#lyon" onclick="visual_query('/campus/lyon.html','visuelle');">Lyon</a>
                         </div>
                     </section>
 
@@ -146,15 +146,15 @@
         <div class="socialNetwork">
             <ul>
                 <li><a href="#"><img class="icoFaceBook" src="./Logos/FaceBook.png" alt="FaceBook"
-                            onclick="switchStyle('./css/bleu.css')"></a></li>
+                            onclick="switchStyle('./css/facebook.css')"></a></li>
                 <li><a href="#"><img class="icoGitHub" src="./Logos/GitHub.png" alt="GitHub"
-                            onclick="switchStyle('./css/blanc.css')"></a></li>
+                            onclick="switchStyle('./css/gitHUb.css')"></a></li>
                 <li><a href="#"><img class="icoInstagram" src="./Logos/Instagram.png" alt="Instagram"
-                            onclick="switchStyle('./css/orange.css')"></a></li>
+                            onclick="switchStyle('./css/instagram.css')"></a></li>
                 <li><a href="#"><img class="icoLinkedIn" src="./Logos/LinkedIn.png" alt="LinkedIn"
-                            onclick="switchStyle('./css/bleu-ciel.css')"></a></li>
+                            onclick="switchStyle('./css/linkedin.css')"></a></li>
                 <li><a href="#"><img class="icoTwitter" src="./Logos/Twitter.png" alt="Twitter"
-                            onclick="switchStyle('./css/noir.css')"></a></li>
+                            onclick="switchStyle('./css/x.css')"></a></li>
             </ul>
         </div>
 
