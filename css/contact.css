@@ -1,6 +1,22 @@
+@font-face {
+    font-family: "FilsonProBlack";
+    src: url("../fonts/FilsonProBlack.otf") format("otf");
+
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
+
+}
+
+
+body {
+    background-image: url(../images/background-contact.svg);
+    background-attachment: fixed;
+    background-size: cover;
+    /* background-color: #e3e3e3; */
+    font-family: "FilsonProBlack", sans-serif;
 }
 
 /* header */
@@ -8,88 +24,105 @@
 header {
     display: flex;
     flex-direction: row;
-    justify-content: end;
-    background-color: #f8146c;
-    height: 5vh;
+    justify-content: start;
+    justify-content: space-between;
+    /* background-color: #f8146cea; */
+    /* background-image: url(../images/formation_image_01.webp);
+    background-size: cover; */
+    background: linear-gradient(178deg, #f7146b 40%, #adababbb 70%);
+    height: 7vh;
+    border-radius: 0 0 10px 10px;
 }
 
 /* header nav {} */
 
 .logo {
+    color: whitesmoke;
+    margin: 0.4rem;
+    width: 3rem;
+}
+
+.tel {
+    color: whitesmoke;
     margin: 0.4rem;
     width: 3rem;
 }
 
 /* main */
 
-/* premiere section */
-
 main {
-    background-color: #e3e3e3;
+    /* background-image: url(../images/Travail-dequipe-Mag-min.jpg.webp);
+    background-size: cover; */
+    /* background-color: #e3e3e3; */
+    padding: 1rem;
+    height: 83.2vh;
 }
 
-.Team {
-    margin: 1rem 2rem;
-    background-color: white;
-    height: 45vh;
+
+h1 {
+    font-family: "FilsonProBlack", sans-serif;
+    color: rgb(8, 8, 8);
+    font-size: 40px;
+    text-align: center;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    justify-content: center;
+    padding: 1rem 0 2rem 0;
+
 }
 
-/* seconde section */
-
-.presentation {
-    background-color: white;
-    margin: 3rem;
-    height: 45vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-/* .presentation h2 {} */
-
-.presentation div {
-    width: 65ch;
-    margin: 2rem;
-}
 
 /* footer */
 
 .icoFaceBook {
-    width: 2rem;
+    width: 3.2rem;
 }
 
 .icoGitHub {
-    width: 2rem;
+    width: 3.2rem;
 }
 
 .icoInstagram {
-    width: 2rem;
+    width: 3.2rem;
 }
 
 .icoLinkedIn {
-    width: 2rem;
+    width: 3.2rem;
 }
 
 .icoTwitter {
-    width: 2rem;
+    width: 3.2rem;
 }
 
 footer {
-    height: 10vh;
-    background-image:("../images/footer.png") ;
-    background-size: cover;
+    /* background-color: #f8146c; */
+    height: 6rem;
+    /* border-top: solid 1px grey; */
+    /* display: flex;
+    flex-direction: column; */
+    display: flexbox;
+    line-height: 1.5;
+    height: auto;
+    background: linear-gradient(-2deg, #f7146b 40%, #adababbb 70%);
+    border-radius: 10px 10px 0 0;
+    /* background-image: url(../images/footer-1.png);
+    background-size: cover; */
 }
 
+
+
+/* footer 1 */
+
 /* .socialNetwork {} */
+
+.socialNetwork {
+    margin-bottom: 0.8rem;
+}
 
 .socialNetwork ul {
     display: flex;
     flex-direction: row;
     justify-content: start;
-
+    padding-left: 0rem;
 }
 
 .socialNetwork ul li {
@@ -99,19 +132,221 @@ footer {
 .menuFooter ul {
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    padding-left: 0;
 
 }
 
 .menuFooter ul li {
     list-style: none;
+    padding-left: 2rem;
+
 
 }
 
 .menuFooter ul li a {
     color: white;
-    text-decoration: none;
+
 }
 
 .footerWCS {
+    text-align: center;
     color: white;
+    padding-top: 1rem;
+
+}
+
+
+.nav_principal {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: -3000px;
+    background-color: rgba(110, 3, 101, 0.664);
+    padding-top: 60px;
+    transition: left 0.5s ease;
+    display: flex;
+    justify-content: center;
+
+    align-items: center;
+}
+
+.nav_principal ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav_principal a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+    display: block;
+    transition: 0.15s;
+    color: white;
+}
+
+.nav_principal a:hover {
+    color: #871B94;
+}
+
+
+.nav_principal.active {
+    left: 0;
+}
+
+
+.nav_principal .close {
+    position: absolute;
+    top: 0;
+    left: -31px;
+    top: -5px;
+    font-size: 36px;
+    color: #ffffff00;
+}
+
+.burger-icon span {
+    display: block;
+    justify-content: flex-start;
+    width: 35px;
+    height: 5px;
+    margin: 6px 0;
+}
+
+.buttonOpen {
+    display: block;
+    justify-content: flex-end;
+    width: 70x;
+    height: 40px;
+    margin: 6px 0;
+    margin-top: 3px;
+}
+
+.buttonClose {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 70x;
+    height: 40px;
+}
+
+
+/*Navbar version bureau*/
+
+.navbar {
+    width: 100%;
+    max-width: 1200px;
+    height: 60px;
+    background-color: #1d15181e;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    color: #1d1518;
+}
+
+
+.navbar li {
+    list-style: none;
+}
+
+.navbar ul {
+
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    margin-left: 45px;
+}
+
+.navbar li a {
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    font-size: 1.3rem;
+}
+
+.navbar .links {
+    display: flex;
+    justify-content: space-between;
+    gap: 4rem;
+}
+
+
+
+@media (min-width: 800px) {
+    .buttonOpen {
+        display: none;
+        justify-content: flex-start;
+        width: 70x;
+        height: 40px;
+        margin: 6px 0;
+        margin-top: 3px;
+    }
+}
+
+@media (max-width: 800px) {
+    .navbar .links {
+        display: none;
+        justify-content: space-between;
+        gap: 4rem;
+    }
+
+}
+
+
+.section_formulaire {
+    color: white;
+    font-size: 20px;
+    background-color: #adababbb;
+    width: 450px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-evenly;
+    height: 500px;
+}
+
+.section_campus {
+    color: white;
+    font-size: 1rem;
+    background-color: #adababbb;
+    width: 600px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 25px;
+    color: black;
+    /* background-color: #f7146b;  */
+}
+
+
+a span {
+    display: none;
+}
+
+a:hover span {
+    position: absolute;
+    display: block;
+    height: 400px;
+    width: 400px;
+    /* background-image: url("../images/tel.png"); */
+}
+
+a:hover .card {
+    background-image: url("../images/tel.png");
+    position: absolute;
+    display: block;
+    height: 400px;
+    width: 400px;
 }
