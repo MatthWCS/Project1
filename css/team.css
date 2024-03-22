@@ -1,24 +1,15 @@
-@font-face {
-    font-family: "FilsonProBlack";
-    src: url("../fonts/FilsonProBlack.otf");
-}
+@import url('https://fonts.googleapis.com/css2?family=Ysabeau+SC:wght@1..1000&display=swap');
 
 * {
     box-sizing: border-box;
-    margin: 0;
     padding: 0;
 }
 
-h1 h2 p li {
-    color: whitesmoke;
-    font-family: "FilsonProBlack", sans-serif;
-}
-
 body {
-    background-attachment: fixed;
-    background-image: url(../images/backgroud_team.webp);
+    font-family: "Ysabeau SC", sans-serif;
+    margin: 0;
+    background-image: url(/images/backgroud_team.webp);
     background-size: cover;
-    font-family: "FilsonProBlack", sans-serif;
 }
 
 /* header */
@@ -26,10 +17,8 @@ body {
 header {
     display: flex;
     flex-direction: row;
-    justify-content: start;
-    justify-content: space-between;
     background: linear-gradient(178deg, #f7146b 40%, #adababbb 70%);
-    height: auto;
+    height: 7vh;
     border-radius: 0 0 10px 10px;
 }
 
@@ -38,20 +27,17 @@ header {
 .nav_desktop {
     display: flex;
     flex-direction: row;
-    justify-content: center;
     list-style: none;
     padding-left: 0;
 }
 
 .nav_desktop li {
-
     padding-left: 0.5rem;
 }
 
 .nav_desktop li a {
     color: whitesmoke;
     text-decoration: none;
-
 }
 
 .logo {
@@ -59,6 +45,124 @@ header {
     margin: 0.4rem;
     width: 3rem;
 }
+
+/* Ici commence le menu buger /* 
+
+ /* Sidenav menu */
+
+.nav_principal {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: -3000px;
+    background-color: rgba(110, 3, 101, 0.664);
+    padding-top: 60px;
+    transition: left 0.5s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav_principal ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav_principal a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+    display: block;
+    transition: 0.15s;
+    color: white;
+}
+
+.nav_principal a:hover {
+    color: #871B94;
+}
+
+.nav_principal.active {
+    left: 0;
+}
+
+.nav_principal .close {
+    position: absolute;
+    top: 0;
+    left: -31px;
+    top: -5px;
+    font-size: 36px;
+    color: #ffffff00;
+}
+
+.burger-icon span {
+    display: block;
+    justify-content: flex-start;
+    width: 35px;
+    height: 5px;
+    margin: 6px 0;
+}
+
+.buttonOpen {
+    display: block;
+    justify-content: flex-end;
+    width: 70x;
+    height: 40px;
+    margin: 6px 0;
+    margin-top: 3px;
+}
+
+.buttonClose {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 70x;
+    height: 40px;
+}
+
+/*Navbar version bureau*/
+
+.navbar {
+    width: 100%;
+    height: 60px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    color: #1d1518;
+}
+
+
+.navbar li {
+    list-style: none;
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    margin-left: 45px;
+}
+
+.navbar li a {
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    font-size: 1.3rem;
+}
+
+.navbar .links {
+    display: flex;
+    justify-content: space-between;
+    gap: 4rem;
+}
+
 
 /* main */
 
@@ -70,7 +174,7 @@ main {
 
 section h1 {
     color: whitesmoke;
-    font-size: 38px;
+    font-size: 40px;
     text-align: center;
     padding: 1rem 0 2rem 0;
 }
@@ -110,6 +214,7 @@ section h1 {
 .tableau p {
     color: #363636;
     text-align: center;
+    margin: 0;
 }
 
 .ligneSeparative {
@@ -266,7 +371,7 @@ section h1 {
 
 section h2 {
     text-align: center;
-    font-size: 36px;
+    font-size: 38px;
     padding: 2rem;
     color: whitesmoke;
 }
@@ -288,6 +393,7 @@ section h2 {
     margin: 0 1.5rem;
     padding: 1rem;
     width: auto;
+    font-size: 18px;
 }
 
 /* footer */
@@ -315,15 +421,15 @@ section h2 {
 footer {
     display: flex;
     flex-direction: column;
-    line-height: 1.5;
-    height: auto;
+    height: 8rem;
     background: linear-gradient(-2deg, #f7146b 40%, #adababbb 70%);
     border-radius: 10px 10px 0 0;
 }
 
-/* footer 1 */
+
 
 .socialNetwork ul {
+    margin: 0;
     display: flex;
     flex-direction: row;
     justify-content: start;
@@ -334,13 +440,12 @@ footer {
 }
 
 .menuFooter ul {
-    padding-left: 0;
+    margin: 0;
     display: flex;
     flex-direction: row;
     justify-content: center;
     margin-left: auto;
     margin-right: auto;
-    padding-bottom: 1rem;
 }
 
 .menuFooter ul li {
@@ -353,84 +458,180 @@ footer {
     color: white;
 }
 
+.menuFooter a:hover {
+    color: #1d1518;
+}
+
 .footerWCS {
     text-align: center;
     color: white;
-    padding-bottom: 1.5rem;
-    padding-top: 1rem;
 }
 
-/* Ici commence le menu buger /* 
-
- /* Sidenav menu */
-.nav_principal {
-    height: 100%;
-    width: 100%;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: -3000px;
-    background-color: rgba(110, 3, 101, 0.425);
-    padding-top: 60px;
-    transition: left 0.5s ease;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+@media screen and (min-width: 800px) {
+    .buttonOpen {
+        display: none;
+        justify-content: flex-start;
+        width: 70x;
+        height: 40px;
+        margin: 6px 0;
+        margin-top: 3px;
+    }
 }
 
-.nav_principal ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
+@media screen and (max-width: 799px) {
+    .navbar .links {
+        display: none;
+        justify-content: space-between;
+        gap: 4rem;
+    }
 }
 
-.nav_principal a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: black;
-    display: block;
-    transition: 0.15s;
-    color: white;
-}
+@media screen and (min-width: 999px) {
 
-.nav_principal a:hover {
-    color: #871B94;
-}
+    .T tr td p {
+        color: #363636;
+        text-align: center;
+        margin: 0;
+        font-size: 32px;
+    }
 
-.nav_principal.active {
-    left: 0;
-}
+    .ligne1 tr td p {
+        color: #363636;
+        text-align: center;
+        margin: 0;
+        font-size: 26px;
+    }
 
-.nav_principal .close {
-    position: absolute;
-    top: 0;
-    left: -5px;
-    font-size: 36px;
-    color: #ffffff00;
-}
+    .Yavuz {
+        width: 10rem;
+        height: 10rem;
+        z-index: 1;
+        margin-left: auto;
+        margin-right: auto;
+        background-image: url(../avatar/yavuzkutuk.png);
+        background-size: cover;
+        border-radius: 50%;
+        border: solid 1px grey;
+    }
 
-.burger-icon span {
-    display: block;
-    justify-content: flex-start;
-    width: 35px;
-    height: 5px;
-    margin: 6px 0;
-}
+    .Vincent {
+        margin-left: auto;
+        margin-right: auto;
+        width: 7.5rem;
+        height: 7.5rem;
+        z-index: 1;
+        background-image: url(/avatar/vincent.htm);
+        background-size: cover;
+        border-radius: 50%;
+        border: solid 1px grey;
+    }
 
-.buttonOpen {
-    display: block;
-    justify-content: flex-start;
-    width: 70x;
-    height: 40px;
-    margin: 6px 0;
-    margin-top: 3px;
-}
+    .Alex {
+        margin-left: auto;
+        margin-right: auto;
+        width: 7rem;
+        height: 7rem;
+        z-index: 1;
+        background-image: url(/avatar/alexandre.png);
+        background-size: cover;
+        border-radius: 50%;
+        border: solid 1px grey;
+    }
 
-.buttonClose {
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    width: 70x;
-    height: 40px;
+    .Ali {
+        margin-left: auto;
+        margin-right: auto;
+        width: 7rem;
+        height: 7rem;
+        z-index: 1;
+        background-image: url(/avatar/ali.png);
+        background-size: cover;
+        border-radius: 50%;
+        border: solid 1px grey;
+    }
+
+    .Anae {
+        margin-left: auto;
+        margin-right: auto;
+        width: 7rem;
+        height: 7rem;
+        z-index: 1;
+        background-image: url(/avatar/anae.png);
+        background-size: cover;
+        border-radius: 50%;
+        border: solid 1px grey;
+    }
+
+    .David {
+        margin-left: auto;
+        margin-right: auto;
+        width: 7rem;
+        height: 7rem;
+        z-index: 1;
+        background-image: url(/avatar/david.png);
+        background-size: cover;
+        border-radius: 50%;
+        border: solid 1px grey;
+    }
+
+    .Gabriel {
+        margin-left: auto;
+        margin-right: auto;
+        width: 7rem;
+        height: 7rem;
+        z-index: 1;
+        background-image: url(/avatar/gabriel.png);
+        background-size: cover;
+        border-radius: 50%;
+        border: solid 1px grey;
+    }
+
+    .Julien {
+        margin-left: auto;
+        margin-right: auto;
+        width: 7rem;
+        height: 7rem;
+        z-index: 1;
+        background-image: url(/avatar/julien.png);
+        background-size: cover;
+        border-radius: 50%;
+        border: solid 1px grey;
+    }
+
+    .Matth {
+        margin-left: auto;
+        margin-right: auto;
+        width: 7rem;
+        height: 7rem;
+        z-index: 1;
+        background-image: url(/avatar/matt.png);
+        background-size: cover;
+        border-radius: 50%;
+        border: solid 1px grey;
+    }
+
+    .Niko {
+        margin-left: auto;
+        margin-right: auto;
+        width: 7rem;
+        height: 7rem;
+        z-index: 1;
+        background-image: url(/avatar/niko.png);
+        background-size: cover;
+        border-radius: 50%;
+        border: solid 1px grey;
+    }
+
+    .Phil {
+        margin-left: auto;
+        margin-right: auto;
+        width: 7rem;
+        height: 7rem;
+        z-index: 1;
+        background-image: url(/avatar/phil.png);
+        background-size: cover;
+        border-radius: 50%;
+        border: solid 1px grey;
+    }
+
 }

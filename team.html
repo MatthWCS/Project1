@@ -5,40 +5,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/team.css">
-    <link rel="responsive_team" href="./css/responsive_team.css">
     <title>Team</title>
 </head>
 
 <body>
     <header>
+        <div class="navbar">
+            <ul class="links">
+                <li><a href="./index.html">Accueil</a></li>
+                <li><a href="./wilders.html">Wilder's</a></li>
+                <li><a href="./team.html">Team</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+            <div class="burger">
+                <a href="#" id="openButton">
+                    <img src="images/menu-open.png" class="buttonOpen">
+                    <span class="menu-icon"></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </a>
+            </div>
+        </div>
+
         <nav>
             <div id="nav_principal" class="nav_principal">
-                <a id="closeButton" href="#" class="close"><img src="images/menu_close.png" class="buttonClose"></a>
+                <a id="closeButton" href="#" class="close">
+                    <img src="images/menu-open.png" class="buttonClose">
+                </a>
                 <ul>
-                    <li><a href="./accueil.html">Accueil</a></li>
-                    <li><a href="./wilders.html">Wilder'S</a></li>
+                    <img class="logo" src="./Logos/logo.svg">
+                    <li><a href="./index.html">Accueil</a></li>
+                    <li><a href="./wilders.html">Wilder's</a></li>
                     <li><a href="./team.html">Team</a></li>
                     <li><a href="./contact.html">Contact</a></li>
                 </ul>
             </div>
-
-            <a href="#" id="openButton"><img src="images/menu_open.png" class="buttonOpen">
-                <span class="menu-icon">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </span>
-            </a>
-
         </nav>
-        <div>
-            <ul class="nav_desktop">
-                <li><a href="./accueil.html">Accueil</a></li>
-                <li><a href="./wilders.html">Wilder'S</a></li>
-                <li><a href="./team.html">Team</a></li>
-                <li><a href="./contact.html">Contact</a></li>
-            </ul>
-        </div>
+
         <img class="logo" src="./Logos/logo.svg">
     </header>
     <main>
@@ -90,7 +94,7 @@
                     <tr>
                         <td>
 
-                            <a href="#">
+                            <a href="/wilders.html#Vincent">
                                 <div class="Vincent"></div>
                             </a>
                             <p>Vincent (TA)</p>
@@ -102,13 +106,13 @@
                             <p>Alex</p>
                         </td>
                         <td>
-                            <a href="#">
+                            <a href="/wilders.html#Ali">
                                 <div class="Ali"></div>
                             </a>
                             <p>Ali</p>
                         </td>
                         <td>
-                            <a href="#">
+                            <a href="/wilders.html#Anae">
                                 <div class="Anae"></div>
                             </a>
                             <p>Anae</p>
@@ -130,19 +134,19 @@
                     <tr>
                         <td></td>
                         <td>
-                            <a href="#">
+                            <a href="/wilders.html#David">
                                 <div class="David"></div>
                             </a>
                             <p>David</p>
                         </td>
                         <td>
-                            <a href="#">
+                            <a href="/wilders.html#Gabriel">
                                 <div class="Gabriel"></div>
                             </a>
                             <p>Gab</p>
                         </td>
                         <td>
-                            <a href="#">
+                            <a href="/wilders.html#Julien">
                                 <div class="Julien"></div>
                             </a>
                             <p>Julien</p>
@@ -165,7 +169,7 @@
                     <tr>
                         <td></td>
                         <td>
-                            <a href="#">
+                            <a href="/wilders.html#Matth">
                                 <div class="Matth"></div>
                             </a>
                             <p>Matth</p>
@@ -177,7 +181,7 @@
                             <p>Niko</p>
                         </td>
                         <td>
-                            <a href="#">
+                            <a href="/wilders.html#Phil">
                                 <div class="Phil"></div>
                             </a>
                             <p>Phil</p>
@@ -203,7 +207,7 @@
         </section>
     </main>
     <footer>
-        <div class="socialNetwork">
+        <section class="socialNetwork">
             <ul>
                 <li><a href="#"><img class="icoFaceBook" src="./Logos/FaceBook.png" alt="FaceBook"></a></li>
                 <li><a href="#"><img class="icoGitHub" src="./Logos/GitHub.png" alt="GitHub"></a></li>
@@ -211,13 +215,13 @@
                 <li><a href="#"><img class="icoLinkedIn" src="./Logos/LinkedIn.png" alt="LinkedIn"></a></li>
                 <li><a href="#"><img class="icoTwitter" src="./Logos/Twitter.png" alt="Twitter"></a></li>
             </ul>
-        </div>
+        </section>
         <div class="menuFooter">
             <ul>
-                <li><a href="#">Accueil</a></li>
-                <li><a href="#">Wilders</a></li>
-                <li><a href="#">Team</a></li>
-                <li><a href="#">Rejoignez-nous</a></li>
+                <li><a href="/index.html">Accueil</a></li>
+                <li><a href="/wilders.html">Wilders</a></li>
+                <li><a href="/team.html">Team</a></li>
+                <li><a href="/contact.html">Rejoignez-nous</a></li>
             </ul>
         </div>
         <div class="footerWCS">
@@ -226,6 +230,6 @@
 
     </footer>
 </body>
-<script src="./js/script.js"></script>
+<script src="/js/script.js"></script>
 
 </html>

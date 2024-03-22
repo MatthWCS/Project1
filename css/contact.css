@@ -65,15 +65,15 @@ main {
 }
 
 
- h1 {
-
+h1 {
+    font-family: "FilsonProBlack", sans-serif;
     color: rgb(8, 8, 8);
     font-size: 40px;
     text-align: center;
     display: flex;
     justify-content: center;
     padding: 1rem 0 2rem 0;
-    
+
 }
 
 
@@ -105,7 +105,7 @@ footer {
     /* border-top: solid 1px grey; */
     /* display: flex;
     flex-direction: column; */
-    display:flexbox;
+    display: flexbox;
     line-height: 1.5;
     height: auto;
     background: linear-gradient(-2deg, #f7146b 40%, #adababbb 70%);
@@ -156,8 +156,7 @@ footer {
 
 .menuFooter ul li a {
     color: white;
-    padding-top:-40px;
- 
+
 }
 
 .footerWCS {
@@ -203,7 +202,8 @@ footer {
 }
 
 .nav_principal a:hover {
-    color: #871B94;}
+    color: #871B94;
+}
 
 
 .nav_principal.active {
@@ -248,47 +248,50 @@ footer {
 
 /*Navbar version bureau*/
 
-  .navbar {
+.navbar {
     width: 100%;
     height: 60px;
-   background-color: #1d15181e;
-  display: flex;
-     align-items: center;
+    background-color: #1d15181e;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
     justify-content: space-between;
     text-decoration: none;
-   }
+}
 
-   .navbar a:hover {
-   color: #1d1518;
- }
-    
+.navbar a:hover {
+    color: #1d1518;
+}
 
-   .navbar li{
+
+.navbar li {
     list-style: none;
-   }
-.navbar ul{
+}
+
+.navbar ul {
 
     display: flex;
     justify-content: center;
     margin-top: 10px;
     margin-left: 45px;
 }
-   .navbar li a {
- text-decoration: none;
- list-style: none;
- color: white;
-font-size: 1.3rem;
- }
-    
- .navbar .links {
+
+.navbar li a {
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    font-size: 1.3rem;
+}
+
+.navbar .links {
     display: flex;
     justify-content: space-between;
     gap: 4rem;
- }
-    
+}
 
 
-@media (min-width: 800px){
+
+@media (min-width: 800px) {
     .buttonOpen {
         display: none;
         justify-content: flex-start;
@@ -302,290 +305,62 @@ font-size: 1.3rem;
     }
 }
 
-@media (max-width: 799px){
+@media (max-width: 800px) {
     .navbar .links {
         display: none;
         justify-content: space-between;
         gap: 4rem;
-     }
-
-     .container{
-        display: flex;
-        flex-direction: column-reverse;
-        justify-content: space-evenly;
-        height: 550px;
-        align-items: center;
-        margin-top: 200px;
     }
 
-    main {
-        /* background-image: url(../images/Travail-dequipe-Mag-min.jpg.webp);
-        background-size: cover; */
-        /* background-color: #e3e3e3; */
-        padding: 1rem;
-        height: 130.2vh;
-    }
+}
 
-    h1 {
 
-        color: rgb(8, 8, 8);
-        font-size: 40px;
-        text-align: center;
-        display: flex;
-        justify-content: center;
-        padding: 1rem 0 2rem 0;
-
-        
-    }
-    
-    
-
-    
 .section_formulaire {
-    color:white;
-font-size: 20px;
-background-color: #adababbb;
-width: 450px;
-margin-top: 45px;
-border-radius: 3rem ;
+    color: white;
+    font-size: 20px;
+    background-color: #adababbb;
+    width: 450px;
 }
 
-/* Media queries pour le navigateur chrome uniquement.*/
-@media screen and (-webkit-min-device-pixel-ratio:0) {
-    
-    .container{
-        display: flex;
-        flex-direction: column-reverse;
-        justify-content: space-evenly;
-        height: 550px;
-        align-items: center;
-        margin-top: 520px;
-    }
-}
-
-/* Media queries pour le navigateur firefox uniquement.*/
-@media all and (min--moz-device-pixel-ratio:0) and (max-width: 800px){
-
-    .container{
-        display: flex;
-        flex-direction: column-reverse;
-        justify-content: space-evenly;
-        height: 550px;
-        align-items: center;
-        margin-top: 250px;
-    }
-}
-
-
-
-
-        
-}
-
- 
-#myForm {
+.container {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    justify-content: space-evenly;
+    height: 500px;
 }
 
-
-
-
-.section_formulaire {
-    color:white;
-font-size: 20px;
-background-color: #adababbb;
-width: 450px;
-border-radius: 3rem ;
-}
-    .container{
-        display: flex;
-        justify-content: space-evenly;
-        height: 550px;
-    }
-
-    .section_campus {
-        color:white;
+.section_campus {
+    color: white;
     font-size: 1rem;
     background-color: #adababbb;
     width: 600px;
-    border-radius: 3rem ;
-    }
-
-    .formo{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-top: 25px;
-        color: black;
-/* background-color: #f7146b;  */
-    }
-
-    
-    a span {
-        display:none;
-        }
-        
-        a:hover span {
-        position: absolute;
-        display: block;
-        height: 400px;
-        width: 400px;
-        /* background-image: url("../images/tel.png"); */
-        }
-
-        a:hover .card{
-            background-image: url("../images/tel.png");
-            position: absolute;
-            display: block;
-            height: 400px;
-            width: 400px;
-        }
-
-    .firstName {
-
-        padding-left: 80px;
-        padding-top: 30px;
-    }
-
-    .email {
-
-        padding-left: 91px;
-        padding-top: 15px;
-    }
-
-    .telephone {
-
-        padding-left: 60px;
-        padding-top: 30px;
-    }
-
-
-    .questionSelect {
-
-        padding-left: 80px;
-        padding-top: 20px;
-    }
-
-
-    .message {
-
-        padding-left: 15px; ;
-        padding-top: 20px;
-    }
-
-    .envoyer {
-
-        padding-left: 10px;
-        padding-top: 15px;
-    }
-
-
-    /* Error page */
-
-.errorPanel {
-    padding-top: 100px;
-
-    }
-
-    .errorPanel a{
-        padding-left: 80px;
-        margin-top: 100px;
-        color: white;
-        text-decoration:none ;
-    }
-
-
-    .errorPanel p{
-        padding-left: 80px;
-        margin-top: 80px;
-    }
-
-    .errorPanel a:hover {
-        color: #1d1518;
-      }
-
-
-/*Formulaire validé*/
-.section_formulaire ul{
-    padding-top: 100px;
 }
 
-
-
-
-.logo-main {
-
-    margin: 0.4rem;
-    width: 3.5rem;
-    margin-left: 41px;
-}
-
-
-.java{
-    background-color: #ffffff00;
-    border: 0px;
-    margin-left: 300x;
+form {
     display: flex;
-    align-items: end;
-    justify-content:flex-end;
-    margin-left: 1000px;
- 
-
-}
-
-#contenu{
-    height: 150;
-    background-color: #f7146b;
-    width:200px ;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 25px;
+    color: black;
+    /* background-color: #f7146b;  */
 }
 
 
-.chepas{
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content:center ;
-    height: 60px;
-    gap: 2rem;
-    font-size: 1.3rem;
-    text-decoration: none;
-    list-style: none; 
-    padding-top:  1rem;
+a span {
+    display: none;
 }
 
-.chepas a{
-    text-decoration: none;
-    list-style: none;
-    color: white;
-   
+a:hover span {
+    position: absolute;
+    display: block;
+    height: 400px;
+    width: 400px;
+    /* background-image: url("../images/tel.png"); */
 }
 
-
-.chepas1{
-    background-color: #871B94;
-    height: 60px;
-    display: flex;
-    flex-direction: row;
+a:hover .card {
+    background-image: url("../images/tel.png");
+    position: absolute;
+    display: block;
+    height: 400px;
+    width: 400px;
 }
-
-
-.chepas2{
-    height: 460px;
-}
-
-.campus{
-display: flex;
-justify-content: center ;
-
-}
-
-.adresse{
-    display: flex;
-    justify-content: center;
-}
-
-.chepas a:hover {
-    color: #1d1518;
-  }
-     
